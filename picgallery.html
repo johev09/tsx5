@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Picture Gallery</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <!--<link rel="shortcut icon" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/picgallery.css" />
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+    <script src="/js/jquery.nicescroll.min.js"></script>
+    <script src="/js/picgallery.js"></script>
+    <script>
+        function fblogin() {
+        FB.login(function (response) {
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+        }, {
+            scope: 'public_profile,email,user_photos',
+            return_scopes: true
+        });
+    }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>PICTURE GALLERY</h1>
+        </div>
+        <div id="content">
+            <button class="btn-fb-login" onclick="fblogin()" >Sign in with Facebook</button>
+            <div id="piclist">
+                <div>
+                    <img class="image" src="images/technoshinexv.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/pg/2.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/pg/3.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/pg/4.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/pg/5.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/pg/6.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/pg/7.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/pg/8.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/pg/9.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/pg/10.jpg" />
+                    <div class="pictools">
+                        <a href="#" class="likebtn">
+                            <img src="images/fblike.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="zoomedpic">
+                <button class="arrow left">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 80" xml:space="preserve">
+                        <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	45.63,75.8 0.375,38.087 45.63,0.375 " />
+                    </svg>
+                </button>
+                <img class="previmg" />
+                <img class="currimg" />
+                <img class="nextimg" />
+                <button class="arrow right">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 80" xml:space="preserve">
+                        <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	0.375,0.375 45.63,38.087 0.375,75.8 " />
+                    </svg>
+                </button>
+                <div class="likepic">
+                    <a href="#">
+                        <img src="images/fblike.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="status">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

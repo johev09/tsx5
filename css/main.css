@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*@import url(http://fonts.googleapis.com/css?family=Raleway);*/
+
+/*
+smooth animation hack
+#container {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}*/
+*,
+*:after,
+*::before {
+    
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat',Open Sans,sans-serif;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/raleway/Raleway-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/raleway/Raleway-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/raleway/Raleway-Light.ttf");
+    font-weight: lighter;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

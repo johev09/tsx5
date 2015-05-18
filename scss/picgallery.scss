@@ -1,0 +1,360 @@
+
+body {
+
+    background: url("../images/geometry2.png");
+
+}
+
+#header {
+
+    text-align: center;
+
+    padding: 20px;
+
+    h1 {
+
+        font-size: 4em;
+
+        letter-spacing: 0.5em;
+
+        color: rgba(0, 0, 0, 0.5);
+
+        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+
+    }
+
+}
+
+#content {
+
+    text-align: center;
+    
+    .btn-fb-login {
+        padding: 10px;
+        font-size: 1em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: white;
+        background: #459bff;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+        transition: background 0.2s linear;
+        &:hover {
+            background: #0072f5
+        }
+        &:active {
+            transition: background 0s;
+            background: #97c2f4
+        }
+    }
+
+    #piclist {
+
+        display: inline-block;
+
+        padding: 1em;
+
+        >div {
+
+            position: relative;
+
+            display: inline-block;
+
+            background: transparent;
+
+            min-width: 22em;
+
+            margin: 1em;
+
+            overflow: hidden;
+
+            vertical-align: middle;
+
+            >img {
+
+                margin: 0;
+
+                min-width: 10em;
+
+                max-width: 22em;
+
+                padding: 0px;
+
+                background: white;
+
+                transition: transform 0.5s ease;
+
+                cursor: zoom-in;
+
+            }
+
+            .pictools {
+
+                margin: 0;
+
+                position: absolute;
+
+                top: 50%;
+
+                left: 50%;
+
+                transform: translate(-50%, -50%);
+
+                opacity: 0;
+
+                .likebtn {
+
+                    opacity: 1;
+
+                    display: inline-block;
+
+                    transform-origin: center;
+
+                    transform: translateX(0%) scale(0.75);
+
+                    transition: transform 0.3s cubic-bezier(.45, 1, .77, 1.5);
+
+                    img {
+
+                        width: 40px;
+
+                        height: 40px;
+
+                    }
+
+                }
+
+                /*.zoom {
+
+                    display: inline-block;
+
+                    transform: translateX(200%);
+
+                    transition: transform 0.3s ease;
+
+                    img {
+
+                        width: 30px;
+
+                        height: 30px;
+                    }
+
+                }*/
+
+            }
+
+            &:hover {
+
+                .pictools {
+
+                    opacity: 1;
+
+                    .likebtn {
+
+                        transform: translateX(0%) scale(1);
+
+                    }
+
+                }
+
+                >img {
+
+                    padding: 0;
+
+                    transform: scale(1.25);
+
+                }
+
+            }
+
+        }
+
+    }
+
+    #zoomedpic {
+
+        visibility: collapse;
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: rgba(0, 0, 0, 0.5);
+
+        >img {
+
+            position: absolute;
+
+            &.previmg {
+
+                left: -100%;
+
+            }
+
+            &.nextimg {
+
+                left: 150%;
+
+            }
+
+            &.previmg,
+
+            &.nextimg {
+
+                top: 50%;
+
+                transform: translate(-50%, -50%);
+
+            }
+
+        }
+
+        .arrow {
+
+            outline: 0 !important;
+
+            position: absolute;
+
+            width: 100px;
+
+            top: 50%;
+
+            /*transform: translateY(-50%);*/
+
+            cursor: pointer;
+
+            background: transparent;
+
+            svg {
+
+                width: 50px;
+
+                height: 80px;
+
+                padding: 5px;
+
+            }
+
+            &.left {
+
+                left: 0;
+                transform: translate(-100%,-50%);
+
+            }
+
+            &.right {
+
+                right: 0;
+                transform: translate(100%,-50%);
+            }
+
+            &.left,
+
+            &.right {
+
+                polyline {
+
+                    transition: stroke-width 250ms ease-in-out;
+
+                }
+
+                &:hover {
+
+                    polyline {
+
+                        stroke-width: 3;
+
+                    }
+
+                }
+
+                &:active {
+
+                    polyline {
+
+                        stroke-width: 6;
+
+                        transition: all 100ms ease-in-out;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .likepic {
+
+            position: absolute;
+
+            top: 100%;
+
+            left: 50%;
+
+            transform: translate(-50%, -0%);
+            height: 10%;
+
+            display: table;
+            opacity: 0;
+            transition: opacity 100ms ease,
+                transform 100ms ease;
+            
+            -webkit-backface-visibility: hidden;
+
+            a {
+
+                display: table-cell;
+
+                vertical-align: middle;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+            }
+
+        }
+        
+        transition: background 0.5s ease;
+        background: transparent;
+        .likepic {
+            transition: opacity 500ms ease,
+                    transform 500ms ease;
+        }
+        .arrow {
+            &.left,&.right {
+                transition: transform 500ms ease;
+            }
+        }
+        &.open {
+            transition: background 0.5s ease;
+            background: rgba(0, 0, 0, 0.5);            
+            .likepic {
+                opacity: 1;
+                transform: translate(-50%,-100%);
+                transition: opacity 500ms ease,
+                    transform 500ms ease;
+            }
+            
+            .arrow {
+                &.left,&.right {
+                transform: translate(0%,-50%);
+                transition: transform 500ms ease;
+                }
+            }
+            
+        }
+
+    }
+
+}
