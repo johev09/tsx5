@@ -1,0 +1,1250 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,100,400,300);
+@import url(http://fonts.googleapis.com/css?family=Megrim);
+/*
+@import url(http://fonts.googleapis.com/css?family=VT323);
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);*/
+/* line 13, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+body, html {
+  height: 100%;
+  font-family: 'Raleway', sans-serif; }
+
+/* line 18, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+a:link {
+  color: inherit; }
+
+/* line 22, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+#container {
+  height: 100%;
+  position: relative; }
+  /* line 25, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container .menu {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100px;
+    overflow: visible;
+    transition: 0.3s;
+    transform: translateX(-100%); }
+    /* line 36, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .menu button.menu__handle {
+      z-index: 2;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: none; }
+    /* line 43, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .menu .morph-shape {
+      position: absolute;
+      width: 200px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: 0.3s;
+      pointer-events: none; }
+    /* line 54, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .menu .morph-shape svg path {
+      fill: rgba(0, 0, 0, 0.8); }
+    /* line 59, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .menu .menu__inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      /* line 66, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container .menu .menu__inner ul {
+        display: block;
+        height: 80%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        list-style: none; }
+        /* line 75, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container .menu .menu__inner ul li {
+          width: 100%;
+          height: 16.67%;
+          color: white;
+          transition: 0.7s;
+          transform: scale(1) translateX(-50%);
+          opacity: 0;
+          text-align: center;
+          display: table; }
+          /* line 86, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container .menu .menu__inner ul li:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 0px;
+            background: orange;
+            left: 100%;
+            top: 0;
+            transition: width 0.3s linear; }
+          /* line 96, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container .menu .menu__inner ul li:hover {
+            transition: 0.3s;
+            transition-delay: 0s !important; }
+            /* line 107, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container .menu .menu__inner ul li:hover a {
+              border-right: 5px solid orange; }
+          /* line 114, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container .menu .menu__inner ul li a {
+            border-right: 0px solid orange;
+            display: table-cell;
+            vertical-align: middle;
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            letter-spacing: 0em;
+            transition: 0.3s;
+            padding: 5px; }
+            /* line 124, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container .menu .menu__inner ul li a:visited {
+              color: inherit; }
+            /* line 127, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container .menu .menu__inner ul li a i {
+              font-size: 1.5em;
+              color: #5590ff;
+              display: block; }
+            /* line 133, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container .menu .menu__inner ul li a span {
+              display: inline-block;
+              transition: 0.3s;
+              font-size: 0.8em; }
+          /* line 143, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container .menu .menu__inner ul li:nth-child(1) a i {
+            color: greenyellow; }
+          /* line 143, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container .menu .menu__inner ul li:nth-child(2) a i {
+            color: #4577ff; }
+          /* line 143, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container .menu .menu__inner ul li:nth-child(3) a i {
+            color: #ef33ff; }
+          /* line 143, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container .menu .menu__inner ul li:nth-child(4) a i {
+            color: #727272; }
+          /* line 143, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container .menu .menu__inner ul li:nth-child(5) a i {
+            color: #f4ff6f; }
+    /* line 166, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .menu.menu--open {
+      transform: translateX(0%); }
+      /* line 168, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container .menu.menu--open .morph-shape {
+        transform: translateX(0%); }
+      /* line 175, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container .menu.menu--open .menu__inner ul li {
+        opacity: 1;
+        transform: scale(1) translateX(0%); }
+        /* line 178, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container .menu.menu--open .menu__inner ul li:nth-child(1) {
+          transition-delay: 0.4s; }
+        /* line 181, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container .menu.menu--open .menu__inner ul li:nth-child(2) {
+          transition-delay: 0.55s; }
+        /* line 184, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container .menu.menu--open .menu__inner ul li:nth-child(3) {
+          transition-delay: 0.7s; }
+        /* line 187, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container .menu.menu--open .menu__inner ul li:nth-child(4) {
+          transition-delay: 0.85s; }
+        /* line 190, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container .menu.menu--open .menu__inner ul li:nth-child(5) {
+          transition-delay: 1s; }
+        /* line 193, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container .menu.menu--open .menu__inner ul li:nth-child(6) {
+          transition-delay: 1.15s; }
+  /* line 204, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container #nav {
+    -webkit-perspective: 2000px;
+    display: none;
+    position: fixed;
+    top: 45px;
+    right: 60px;
+    z-index: 999;
+    overflow: visible; }
+    /* line 214, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #nav nav {
+      background: rgba(0, 0, 0, 0.5);
+      -webkit-transform-style: preserve-3d;
+      transform-origin: 100% 50%;
+      transform: rotateY(-90deg) rotateZ(-10deg);
+      transition: 0.7s ease;
+      opacity: 0;
+      /*&:hover {
+                transform: rotateY(0deg) rotateZ(0deg);
+                opacity: 1;
+            }*/
+      font-size: 0.8em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: white;
+      overflow: hidden; }
+      /* line 237, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #nav nav a {
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.3s;
+        margin: 0px 10px;
+        padding: 5px;
+        border-radius: 2px;
+        background: transparent;
+        color: white; }
+        /* line 246, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #nav nav a:hover {
+          background: rgba(0, 0, 0, 0.7); }
+  /* line 256, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container .lines-button {
+    z-index: 999;
+    outline: none;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: transparent;
+    display: inline-block;
+    padding: 20px 10px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.3s linear; }
+    /* line 270, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .lines-button:hover .lines {
+      background: #0076ff; }
+    /* line 274, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .lines-button.open {
+      opacity: 1;
+      transform: rotate(-90deg); }
+      /* line 277, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container .lines-button.open .lines {
+        background: rgba(0, 0, 0, 0.5); }
+        /* line 278, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container .lines-button.open .lines:before, #container .lines-button.open .lines:after {
+          opacity: 0;
+          top: 0; }
+  /* line 307, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container .lines {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background: white;
+    transition: all 0.3s linear;
+    top: -2.5px;
+    position: relative;
+    /*create the upper and lower lines as pseudo-elements of the middle line*/ }
+    /* line 314, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .lines:before, #container .lines:after {
+      display: inline-block;
+      width: 40px;
+      height: 5px;
+      background: white;
+      transition: all 0.3s linear;
+      position: absolute;
+      left: 0;
+      content: '';
+      transform-origin: 2.85714px center; }
+    /* line 321, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .lines:before {
+      top: 11.42857px; }
+    /* line 324, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container .lines:after {
+      top: -11.42857px; }
+  /* line 328, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container #header {
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(97, 255, 76, 0.75)), to(rgba(0, 0, 255, 0.75)));
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    /*.lines-button:hover {
+  opacity: 1;
+     
+  .lines {
+    &:before { top: $button-size/3.5; }
+    &:after { top: -$button-size/3.5; }
+  }
+}*/
+    /*.lines-button.arrow:hover {
+            transform: scale3d(.8, .8, .8);
+        }
+        .lines-button.arrow:hover .lines {
+            &:before, &:after {
+                top: 0;
+                width: $button-size/1.8;
+            }
+            &:before {
+                transform: rotate3d(0, 0, 1, 40deg);
+            }
+            &:after {
+                transform: rotate3d(0, 0, 1, -40deg);
+            }
+        }*/ }
+    /* line 361, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #header .nit-logo {
+      position: absolute;
+      top: 1.5em;
+      left: 1.5em;
+      width: 100px;
+      height: 100px;
+      opacity: 0.7; }
+      /* line 367, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #header .nit-logo img {
+        max-width: 100%; }
+    /* line 372, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #header .cad-logo {
+      display: none;
+      position: absolute;
+      bottom: 1.5em;
+      right: 1.5em;
+      width: 100px;
+      height: 100px; }
+      /* line 379, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #header .cad-logo img {
+        max-width: 100%; }
+    /* line 383, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #header h1 {
+      width: 2000px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-block;
+      position: absolute;
+      font-family: 'Raleway', Raleway Dots, sans-serif;
+      font-size: 5em;
+      letter-spacing: 0.2em;
+      font-weight: 300;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+      color: rgba(0, 0, 0, 0.25);
+      display: table;
+      /*background: linear-gradient(90deg, #14ff00 25%, #fff 50%, #ff41ff 75%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;*/
+      transition: all 0.5s ease-in-out; }
+      /* line 402, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #header h1 .tsver {
+        font-weight: 100;
+        color: white;
+        /*-webkit-text-fill-color: white;*/ }
+      /* line 407, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #header h1:hover {
+        /*letter-spacing: 0.3em;
+                color: rgba(160, 255, 90, 0.1);*/ }
+      /* line 416, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #header h1 .atom {
+        display: inline-block;
+        position: relative; }
+        /* line 419, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #header h1 .atom .orbit {
+          display: none;
+          position: absolute;
+          top: -55px;
+          left: -70px;
+          width: 200px;
+          height: 200px;
+          border-radius: 200px;
+          transform: rotateX(60deg) rotateY(45deg);
+          -webkit-transform-style: preserve-3d; }
+          /* line 428, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #header h1 .atom .orbit:nth-child(1) {
+            transform: rotateX(60deg) rotateY(-45deg); }
+            /* line 430, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #header h1 .atom .orbit:nth-child(1) .path {
+              -webkit-animation: rotate-electron 2s linear 1s infinite; }
+          /* line 434, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #header h1 .atom .orbit:nth-child(2) {
+            transform: rotateX(60deg) rotateY(0deg); }
+            /* line 436, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #header h1 .atom .orbit:nth-child(2) .path {
+              -webkit-animation: rotate-electron 2s linear 1.5s infinite; }
+          /* line 441, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #header h1 .atom .orbit .path {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 200px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            -webkit-animation: rotate-electron 2s linear infinite;
+            -webkit-transform-style: preserve-3d; }
+            /* line 449, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #header h1 .atom .orbit .path .electron {
+              color: white;
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              top: 20px;
+              left: 20px;
+              font-size: 30px;
+              line-height: 30px;
+              -webkit-transform-style: preserve-3d;
+              transform: rotateX(-60deg) rotateY(-45deg); }
+        /* line 464, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #header h1 .atom .o {
+          position: relative;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 0.2em;
+          box-shadow: inset 0px 0px 20px 5px rgba(255, 255, 255, 0.5); }
+          /* line 471, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #header h1 .atom .o:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            -webkit-animation: blow-out 2s linear infinite; }
+    /* line 482, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #header .scroll-down {
+      display: inline-block;
+      position: absolute;
+      opacity: 0.5;
+      bottom: 5%;
+      left: 50%;
+      -webkit-animation: scroll-down 1s ease infinite;
+      transform-origin: -25% 50%;
+      transform: translate(-50%, 0%); }
+      /* line 491, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #header .scroll-down h4 {
+        display: none;
+        color: #3bd8fd;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        font-size: 1.2em;
+        word-spacing: 0.5em;
+        font-weight: bold; }
+      /* line 499, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #header .scroll-down img {
+        margin-top: 10px;
+        width: 50px; }
+  /* line 512, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container #content h1.section-heading {
+    text-align: center;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.7);
+    position: relative;
+    font-size: 3em;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 0.2em;
+    white-space: nowrap;
+    /*background-size: 50px 50px;
+            background-color: rgb(40, 118, 244);
+            //background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+            */
+    background: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.2) 75%), linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.2) 75%), #009997;
+    background-position: auto auto;
+    background-size: 50px 50px; }
+    /* line 533, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading span.left, #container #content h1.section-heading span.right {
+      display: inline-block;
+      padding: 10px 10px; }
+    /* line 539, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading span.left {
+      color: white;
+      position: relative;
+      opacity: 1; }
+    /* line 546, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading span.right {
+      color: #2a2a2a; }
+    /* line 554, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading i {
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+      transform: translateX(100%);
+      opacity: 0;
+      transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s; }
+    /* line 562, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading.about i {
+      color: #bcbcbc; }
+    /* line 567, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading.offline i {
+      color: #ffffff; }
+    /* line 573, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading.online i {
+      color: violet; }
+    /* line 578, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading.winners i {
+      color: yellow; }
+    /* line 583, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading.team i {
+      color: #ac87ff; }
+    /* line 588, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content h1.section-heading.animated i {
+      transform: translateX(0%);
+      opacity: 1; }
+  /* line 620, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container #content #about-us {
+    text-align: center;
+    color: black; }
+    /* line 625, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content #about-us div {
+      overflow: auto;
+      position: relative;
+      background: url("../images/about.jpg"); }
+      /* line 629, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #about-us div:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, #00ffce, #3dff3d);
+        opacity: 0.9; }
+      /* line 641, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #about-us div h3 {
+        position: relative;
+        margin-top: 50px;
+        padding: 50px;
+        font-size: 2em;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+        /* line 648, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #about-us div h3:before {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 500px;
+          height: 1px;
+          background: orange; }
+      /* line 659, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #about-us div p {
+        position: relative;
+        padding: 50px;
+        margin-bottom: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        line-height: 2;
+        letter-spacing: 1px; }
+  /* line 671, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container #content #online-events {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0px; }
+    /* line 680, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content #online-events .events {
+      overflow: hidden;
+      position: relative;
+      display: inline-block; }
+      /* line 684, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #online-events .events .event {
+        box-sizing: border-box;
+        border: 5px solid white;
+        width: 50%;
+        height: 500px;
+        float: left;
+        position: relative;
+        cursor: pointer;
+        /*OFFLINE EVENTS */ }
+        /* line 696, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event .details {
+          font-size: 2em;
+          opacity: 1;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 50%;
+          transform: translateY(-50%) scale(1);
+          color: white;
+          text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          transition: 0.5s; }
+          /* line 707, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event .details h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center center;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+            font-weight: 300; }
+          /* line 717, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event .details p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center center;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2% 2%;
+            width: 70%;
+            display: none;
+            opacity: 0;
+            border-radius: 5px;
+            font-size: 0.7em;
+            line-height: 1.5em; }
+        /* line 749, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.open:before {
+          opacity: 0.2; }
+        /* line 753, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event:hover {
+          /*.details {
+                            opacity: 0 !important;
+                        }
+                        &:before {
+                            opacity: 0.5;
+                        }*/ }
+        /* line 780, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.nh {
+          background: url("../images/on/nh.png");
+          background-size: cover;
+          background-position: center center;
+          transition: background-position 0.5s ease; }
+          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.nh:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s ease; }
+          /* line 783, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.nh:before {
+            background: rgba(209, 83, 255, 0.8); }
+          /* line 787, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.nh.animated .details {
+            opacity: 1;
+            transform: translateY(-50%) scale(1); }
+        /* line 795, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.cz {
+          background: url("../images/on/cz.png");
+          background-size: cover;
+          background-position: center center;
+          transition: background-position 0.5s ease; }
+          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.cz:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s ease; }
+          /* line 798, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.cz:before {
+            background: rgba(255, 83, 83, 0.8); }
+          /* line 802, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.cz.animated .details {
+            opacity: 1;
+            transform: translateY(-50%) scale(1); }
+        /* line 809, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.jc {
+          background: url("../images/on/jc.png");
+          background-size: cover;
+          background-position: center center;
+          transition: background-position 0.5s ease; }
+          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.jc:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s ease; }
+          /* line 812, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.jc:before {
+            background: rgba(83, 129, 255, 0.8); }
+          /* line 816, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.jc.animated .details {
+            opacity: 1;
+            transform: translateY(-50%) scale(1); }
+        /* line 823, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.ii {
+          background: url("../images/on/ii.png");
+          background-size: cover;
+          background-position: center center;
+          transition: background-position 0.5s ease; }
+          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.ii:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s ease; }
+          /* line 826, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.ii:before {
+            background: rgba(109, 255, 83, 0.8); }
+          /* line 830, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.ii.animated .details {
+            opacity: 1;
+            transform: translateY(-50%) scale(1); }
+        /* line 837, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.cw {
+          background: url("../images/on/cs.png");
+          background-size: cover;
+          background-position: center center;
+          transition: background-position 0.5s ease; }
+          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.cw:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s ease; }
+          /* line 840, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.cw:before {
+            background: rgba(0, 0, 0, 0.8); }
+          /* line 844, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.cw.animated .details {
+            opacity: 1;
+            transform: translateY(-50%) scale(1); }
+        /* line 853, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.cs {
+          background: url("../images/off/cs.png");
+          background-size: cover;
+          background-position: center center;
+          transition: background-position 0.5s ease; }
+          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.cs:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s ease; }
+          /* line 856, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.cs:before {
+            background: rgba(209, 83, 255, 0.8); }
+        /* line 860, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.poy {
+          background: url("../images/off/poy.png");
+          background-size: cover;
+          background-position: center center;
+          transition: background-position 0.5s ease; }
+          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.poy:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s ease; }
+          /* line 863, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.poy:before {
+            background: rgba(83, 129, 255, 0.8); }
+        /* line 867, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.t {
+          background: url("../images/off/t.png");
+          background-size: cover;
+          background-position: center center;
+          transition: background-position 0.5s ease; }
+          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.t:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s ease; }
+          /* line 870, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.t:before {
+            background: rgba(255, 83, 83, 0.8); }
+        /* line 874, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .events .event.tm {
+          background: url("../images/off/tm.png");
+          background-size: cover;
+          background-position: center center;
+          transition: background-position 0.5s ease; }
+          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.tm:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s ease; }
+          /* line 877, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #online-events .events .event.tm:before {
+            background: rgba(109, 255, 83, 0.8); }
+    /* line 883, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content #online-events .back-to-events {
+      color: white;
+      font-size: 2em;
+      z-index: 2;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%) scale(0);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      background: rgba(0, 59, 255, 0.61);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      line-height: 50px; }
+      /* line 898, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #online-events .back-to-events.open {
+        transform: translateX(-50%) scale(1); }
+        /* line 899, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #online-events .back-to-events.open:hover {
+          transform: translateX(-50%) scale(1.1); }
+  /* line 906, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container #content #offline-events {
+    position: relative;
+    height: 650px; }
+    /* line 910, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content #offline-events .events {
+      height: 100%;
+      z-index: 1;
+      position: relative;
+      height: 100%;
+      display: block;
+      background: rgba(209, 83, 255, 0.8);
+      text-align: left;
+      display: table;
+      width: 100%;
+      -webkit-perspective: 2000px; }
+      /* line 916, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #offline-events .events .event {
+        display: none; }
+        /* line 918, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #offline-events .events .event .details {
+          font-size: 1em; }
+      /* line 927, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #offline-events .events ul {
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 0px;
+        list-style: none;
+        z-index: 1;
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        transform-origin: 50% 0%;
+        transform: rotateY(45deg); }
+        /* line 937, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #offline-events .events ul li {
+          margin: 20px 0px; }
+          /* line 939, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #offline-events .events ul li a {
+            box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+            font-size: 1em;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            padding: 5px 10px;
+            position: relative;
+            color: rgba(0, 0, 0, 0.8);
+            transition: color 0.3s ease;
+            cursor: pointer; }
+            /* line 949, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #content #offline-events .events ul li a:after, #container #content #offline-events .events ul li a:before {
+              color: white;
+              position: absolute;
+              top: 0; }
+            /* line 955, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #content #offline-events .events ul li a:after {
+              /*content: "]";
+                                left: 100%;*/
+              content: "";
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              background: rgba(255, 255, 255, 0.9);
+              opacity: 1;
+              z-index: -2;
+              transition: all 0.3s ease; }
+            /* line 970, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #content #offline-events .events ul li a:before {
+              /*content: "[";
+                                left: 0%;*/
+              position: absolute;
+              width: 0px;
+              height: 100%;
+              left: 0;
+              top: 0;
+              content: "";
+              background: greenyellow;
+              opacity: 1;
+              transition: width 0.3s ease;
+              z-index: -1; }
+            /* line 988, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #content #offline-events .events ul li a:hover, #container #content #offline-events .events ul li a.selected {
+              /*color: #000;
+                                &:after {
+                                    opacity: 1;
+                                    left: 105%;
+                                }
+                                &:before {
+                                    opacity: 1;
+                                    left: -7%;
+                                }*/ }
+              /* line 990, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+              #container #content #offline-events .events ul li a:hover:after, #container #content #offline-events .events ul li a.selected:after {
+                width: 100%; }
+              /* line 994, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+              #container #content #offline-events .events ul li a:hover:before, #container #content #offline-events .events ul li a.selected:before {
+                left: 0;
+                width: 50%; }
+      /* line 1011, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #offline-events .events .event-show {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        transition: opacity 0.3s ease; }
+        /* line 1019, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #offline-events .events .event-show .info {
+          position: absolute;
+          top: 50%;
+          left: 0; }
+        /* line 1024, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #offline-events .events .event-show.cs {
+          background: url("../images/off/cs.png");
+          /*&:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: $back;
+            }*/
+          background-size: cover;
+          background-position: center center; }
+          /* line 606, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #offline-events .events .event-show.cs:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, red, blue);
+            opacity: 0.8;
+            z-index: 0; }
+        /* line 1028, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #offline-events .events .event-show.tm {
+          background: url("../images/off/tm.png");
+          /*&:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: $back;
+            }*/
+          background-size: cover;
+          background-position: center center; }
+          /* line 606, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #offline-events .events .event-show.tm:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, blue, red);
+            opacity: 0.8;
+            z-index: 0; }
+        /* line 1032, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #offline-events .events .event-show.t {
+          background: url("../images/off/t.png");
+          /*&:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: $back;
+            }*/
+          background-size: cover;
+          background-position: center center; }
+          /* line 606, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #offline-events .events .event-show.t:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, red, blue);
+            opacity: 0.8;
+            z-index: 0; }
+        /* line 1036, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #offline-events .events .event-show.tc {
+          background: url("../images/off/t.png");
+          /*&:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: $back;
+            }*/
+          background-size: cover;
+          background-position: center center; }
+          /* line 606, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #offline-events .events .event-show.tc:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, blue, red);
+            opacity: 0.8;
+            z-index: 0; }
+        /* line 1040, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #offline-events .events .event-show.poy {
+          background: url("../images/off/poy.png");
+          /*&:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: $back;
+            }*/
+          background-size: cover;
+          background-position: center center; }
+          /* line 606, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #offline-events .events .event-show.poy:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, red, blue);
+            opacity: 0.8;
+            z-index: 0; }
+      /* line 1045, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #offline-events .events #mycanvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+  /* line 1054, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container #content #tsx4-winners {
+    position: relative;
+    text-align: center;
+    height: 100vh; }
+    /* line 1059, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content #tsx4-winners .collage {
+      height: 100%;
+      background: url("../images/collage_minsize.jpg");
+      overflow: hidden;
+      position: relative;
+      /*&:before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: $back;
+            }*/
+      background-size: cover;
+      background-position: center center; }
+      /* line 606, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #tsx4-winners .collage:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 0, 0.8));
+        opacity: 0.8;
+        z-index: 0; }
+  /* line 1067, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container #content #team {
+    position: relative;
+    background: linear-gradient(45deg, orange, cyan);
+    color: white;
+    text-align: center;
+    width: 100%; }
+    /* line 1076, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #content #team ul {
+      /*
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                */
+      margin: 50px 0px;
+      display: inline-block;
+      list-style: none;
+      text-align: center; }
+      /* line 1091, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #content #team ul li {
+        margin: 10px 0px;
+        display: inline-block; }
+        /* line 1094, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #content #team ul li .member {
+          padding: 0px 10px;
+          width: 240px;
+          float: left;
+          background: rgba(0, 0, 0, 0.1);
+          margin: 0px 5px;
+          line-height: 75px;
+          text-align: left;
+          position: relative; }
+          /* line 1105, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #team ul li .member .dp {
+            /*
+                            position: absolute;
+                            top: 50%;
+                            left: 5px;
+                            transform: translateY(-50%);
+                            */
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            overflow: hidden;
+            position: relative; }
+            /* line 1125, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #content #team ul li .member .dp img {
+              max-width: 100%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
+          /* line 1134, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #content #team ul li .member .member-name {
+            font-size: 0.9em;
+            /*position: absolute;
+                            top: 50%;
+                            right: 10px;
+                            transform: translateY(-50%);*/
+            position: relative;
+            padding-left: 10px; }
+            /* line 1143, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #content #team ul li .member .member-name:before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 0%;
+              width: 1px;
+              height: 30px;
+              background: rgba(0, 0, 0, 0.5); }
+  /* line 1159, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  #container #footer {
+    background: limegreen;
+    color: white;
+    text-align: center;
+    padding: 10px 0; }
+    /* line 1166, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    #container #footer .base {
+      display: inline-block; }
+      /* line 1168, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #footer .base .share {
+        display: inline-block; }
+        /* line 1170, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #footer .base .share div {
+          display: inline-block;
+          margin: 0px 10px;
+          font-size: 30px;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          transition: background 0.25s ease; }
+          /* line 1179, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #footer .base .share div:hover.facebook {
+            background: #0050ff; }
+          /* line 1182, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #footer .base .share div:hover.youtube {
+            background: #ff2b1e; }
+      /* line 1189, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      #container #footer .base .developed {
+        display: inline-block; }
+        /* line 1191, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        #container #footer .base .developed a {
+          color: #0031ff;
+          text-decoration: none;
+          padding: 5px;
+          transition: all 0.1s linear; }
+          /* line 1196, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          #container #footer .base .developed a:hover {
+            background: #0031ff;
+            color: white; }
+
+@-webkit-keyframes blow-out {
+  /* line 1209, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  from {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px white;
+    opacity: 1; }
+
+  /* line 1214, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  to {
+    transform: scale(3.5);
+    box-shadow: 0px 0px 10px white;
+    opacity: 0; } }
+
+@-webkit-keyframes scroll-down {
+  /*0% {
+        transform: scale(1) translate(-50%, 0%);
+    }
+    60% {
+        transform: scale(1) translate(-50%, 25%);
+    }
+    100% {
+        transform: scale(1) translate(-50%, 0%);
+    }*/
+  /* line 1232, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0%); }
+
+  /* line 1236, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  50% {
+    opacity: 0.7; }
+
+  /* line 1239, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 50%); } }
+
+@-webkit-keyframes rotate-electron {
+  /* line 1246, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  from {
+    transform: rotate(0deg); }
+
+  /* line 1249, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=homepage.css.map */

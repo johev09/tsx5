@@ -1,0 +1,201 @@
+/* line 2, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+body {
+  background: url("../images/geometry2.png"); }
+
+/* line 8, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+#header {
+  text-align: center;
+  padding: 20px; }
+  /* line 14, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+  #header h1 {
+    font-size: 4em;
+    letter-spacing: 0.5em;
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1); }
+
+/* line 28, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+#content {
+  text-align: center; }
+  /* line 32, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+  #content .btn-fb-login {
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+    background: #459bff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.2s linear; }
+    /* line 44, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+    #content .btn-fb-login:hover {
+      background: #0072f5; }
+    /* line 47, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+    #content .btn-fb-login:active {
+      transition: background 0s;
+      background: #97c2f4; }
+  /* line 53, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+  #content #piclist {
+    display: inline-block;
+    padding: 1em; }
+    /* line 59, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+    #content #piclist > div {
+      position: relative;
+      display: inline-block;
+      background: transparent;
+      min-width: 22em;
+      margin: 1em;
+      overflow: hidden;
+      vertical-align: middle; }
+      /* line 75, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #piclist > div > img {
+        margin: 0;
+        min-width: 10em;
+        max-width: 22em;
+        padding: 0px;
+        background: white;
+        transition: transform 0.5s ease;
+        cursor: zoom-in; }
+      /* line 93, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #piclist > div .pictools {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        /*.zoom {
+
+                    display: inline-block;
+
+                    transform: translateX(200%);
+
+                    transition: transform 0.3s ease;
+
+                    img {
+
+                        width: 30px;
+
+                        height: 30px;
+                    }
+
+                }*/ }
+        /* line 107, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+        #content #piclist > div .pictools .likebtn {
+          opacity: 1;
+          display: inline-block;
+          transform-origin: center;
+          transform: translateX(0%) scale(0.75);
+          transition: transform 0.3s cubic-bezier(0.45, 1, 0.77, 1.5); }
+          /* line 119, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+          #content #piclist > div .pictools .likebtn img {
+            width: 40px;
+            height: 40px; }
+      /* line 150, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #piclist > div:hover .pictools {
+        opacity: 1; }
+        /* line 154, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+        #content #piclist > div:hover .pictools .likebtn {
+          transform: translateX(0%) scale(1); }
+      /* line 162, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #piclist > div:hover > img {
+        padding: 0;
+        transform: scale(1.25); }
+  /* line 176, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+  #content #zoomedpic {
+    visibility: collapse;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.5s ease;
+    background: transparent; }
+    /* line 192, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+    #content #zoomedpic > img {
+      position: absolute; }
+      /* line 196, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic > img.previmg {
+        left: -100%; }
+      /* line 202, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic > img.nextimg {
+        left: 150%; }
+      /* line 210, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic > img.previmg, #content #zoomedpic > img.nextimg {
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    /* line 220, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+    #content #zoomedpic .arrow {
+      outline: 0 !important;
+      position: absolute;
+      width: 100px;
+      top: 50%;
+      /*transform: translateY(-50%);*/
+      cursor: pointer;
+      background: transparent; }
+      /* line 236, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic .arrow svg {
+        width: 50px;
+        height: 80px;
+        padding: 5px; }
+      /* line 246, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic .arrow.left {
+        left: 0;
+        transform: translate(-100%, -50%); }
+      /* line 253, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic .arrow.right {
+        right: 0;
+        transform: translate(100%, -50%); }
+      /* line 263, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic .arrow.left polyline, #content #zoomedpic .arrow.right polyline {
+        transition: stroke-width 250ms ease-in-out; }
+      /* line 271, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic .arrow.left:hover polyline, #content #zoomedpic .arrow.right:hover polyline {
+        stroke-width: 3; }
+      /* line 281, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic .arrow.left:active polyline, #content #zoomedpic .arrow.right:active polyline {
+        stroke-width: 6;
+        transition: all 100ms ease-in-out; }
+    /* line 295, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+    #content #zoomedpic .likepic {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      height: 10%;
+      display: table;
+      opacity: 0;
+      transition: opacity 100ms ease, transform 100ms ease;
+      -webkit-backface-visibility: hidden; }
+      /* line 313, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic .likepic a {
+        display: table-cell;
+        vertical-align: middle; }
+        /* line 319, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+        #content #zoomedpic .likepic a img {
+          width: 50px;
+          height: 50px; }
+    /* line 330, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+    #content #zoomedpic .likepic {
+      transition: opacity 500ms ease, transform 500ms ease; }
+    /* line 335, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+    #content #zoomedpic .arrow.left, #content #zoomedpic .arrow.right {
+      transition: transform 500ms ease; }
+    /* line 339, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+    #content #zoomedpic.open {
+      transition: background 0.5s ease;
+      background: rgba(0, 0, 0, 0.5); }
+      /* line 342, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic.open .likepic {
+        opacity: 1;
+        transform: translate(-50%, -100%);
+        transition: opacity 500ms ease, transform 500ms ease; }
+      /* line 350, D:/Project Stuff/technoshinexv/scss/picgallery.scss */
+      #content #zoomedpic.open .arrow.left, #content #zoomedpic.open .arrow.right {
+        transform: translate(0%, -50%);
+        transition: transform 500ms ease; }
+
+/*# sourceMappingURL=picgallery.css.map */

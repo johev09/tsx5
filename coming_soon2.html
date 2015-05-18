@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TechnoShine X.5 | Coming Soon</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="description" content="TechnoShine X.5, The TechFest of Computer Application Deptartment of NIT Durgapur, organised by CAD (Centre for Application Development) Club">
+    <meta name="keywords" content="technoshine x.5, technoshine , nit durgapur, techno-fest, fest, mca, cad, centre for application development">
+    <meta name="author" content="Sk Johev, johev09@gmail.com">
+    <!--<link rel="shortcut icon" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/comingsoon.css" />
+    <link rel="stylesheet" type="text/css" href="css/altwincircle.css" />
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2014.12.12.min.js"></script>
+    <!--<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>-->
+    <script src="js/hovereffect.js"></script>
+</head>
+
+<body class="noselect">
+    <!--<video autoplay loop poster="images/bg.png" id="bgvid">
+        <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
+<source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+    </video>
+    <canvas id="stage" width="500" height="100">
+    </canvas>-->
+    <div id="container">
+        <!--<div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"/>        
+            </div>-->
+        <div id="header">
+            <h1>&lt;<span class="caps">T</span>EC<span class="caps">H</span>NO<span class="caps">SH</span>INE&#47;&gt;<span class="caps"></span><br><span>X.5</span></h1>
+            <div>
+                <p>ONLINE EVENTS</p>
+                <p><a target="_blank" href="https://www.facebook.com/pages/Technoshine-X4/1464096923851565">COMING SOON</a>
+                </p>
+                <p>OFFLINE EVENTS</p>
+            </div>
+        </div>
+        <div id="content">
+            <div class="winners" id="online">
+                <ul>
+                    <li class="wincircle" id="cz">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Code Zip</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="cw">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Code War</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="jc">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Just Click</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="nh">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Net Hunt</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="ii">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Inspire India</h5>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h2>ONLINE EVENTS</h2>
+            </div>
+            <div class="winners" id="offline">
+                <h2>OFFLINE EVENTS</h2>
+                <ul>
+                    <li class="wincircle" id="gg">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Gadget Guru</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="tc">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Total Chaos</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="trick">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Trickology</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="tm">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Tatoo Making</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="bm">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Brain Marathon</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="cs">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Counter-Strike</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="poy">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Performer of the Year</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wincircle" id="sc">
+                        <div class="flipper">
+                            <div class="front">
+                            </div>
+                            <div class="back">
+                                <h5>Socket Combat</h5>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <p>organised by <a target="_blank" href="https://www.facebook.com/centreforappsdev">CAD</a>
+            </p>
+            <p>developed by <a target="_blank" href="http://www.facebook.com/johev09">Johev</a>
+            </p>
+        </div>
+    </div>
+    <div id="container2">
+        <div id="winlist">
+            <h1>TECHNOSHINE X.4<br/><span>WINNERS</span></h1>
+            <div>
+                <ul>
+                    <li id="one">
+                        <div class="prize">
+                            <img src="images/1st.png" />
+                        </div>
+                        <div class="name">
+                            <b>Team: 100Pi</b>
+                            <br/>Sk Jhohev, Souradeep Saha
+                        </div>
+                    </li>
+                    <li id="two">
+                        <div class="prize">
+                            <img src="images/2nd.png" />
+                        </div>
+                        <div class="name">
+                            <b>Team: Delhi wali Girlfriend</b>
+                            <br/>Stuti Agarwal, Abhishek Thakur
+                        </div>
+                    </li>
+                    <li id="three">
+                        <div class="prize">
+                            <img src="images/3rd.png" />
+                        </div>
+                        <div class="name">
+                            <b>Team: Insaaf hoke rehega</b>
+                            <br/>Bill Gates, Stephen Hawkins
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!--CDN link for the latest TweenMax-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <!--CDN links for the latest TweenLite, CSSPlugin, and EasePack-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <!--
+    <script src="js/demo-1.js"></script>
+    <script src="js/balls.js"></script>
+    -->
+
+    <script src="js/winlist.js"></script>
+    
+    <audio id="neon" src="neonglow2.mp3" type="audio/mp3"></audio>
+</body>
+
+</html>
