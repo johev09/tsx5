@@ -709,28 +709,27 @@ a:link {
                             top: 50%;
                             left: 50%;
                             transform-origin: center center;
-                            transform: translate(-50%,-50%);                            
+                            transform: translate(-50%, -50%);
                             transition: 0.5s;
-                            
                             font-weight: 300;
+                            &:hover {
+                                transform: translate(-50%, -50%) scale(0.8);
+                            }
                         }
                         p {
                             position: absolute;
                             top: 50%;
                             left: 50%;
                             transform-origin: center center;
-                            transform: translate(-50%,-50%);
+                            transform: translate(-50%, -50%);
                             transition: 0.5s;
-                            
                             overflow: hidden;
                             background: rgba(0, 0, 0, 0.8);
                             padding: 2% 2%;
-                            
                             width: 70%;
                             display: none;
                             opacity: 0;
                             border-radius: 5px;
-                            
                             font-size: 0.7em;
                             line-height: 1.5em;
                             //letter-spacing: 0.1em;
@@ -738,8 +737,7 @@ a:link {
                     }
                     &.open {
                         .details {
-                            h {
-                            }
+                            h {}
                             p {
                                 //display: inline-block;
                                 //transform: translate(0%,0%);
@@ -783,14 +781,7 @@ a:link {
                         &:before {
                             background: $violet;
                         }
-                        &.animated {
-                            .details {
-                                //font-size: 2em;
-                                opacity: 1;
-                                transform: translateY(-50%) scale(1);
-                                //transition-delay: 0.0s;
-                            }
-                        }
+                        &.animated {}
                     }
                     &.cz {
                         background: url("../images/on/cz.png");
@@ -798,13 +789,7 @@ a:link {
                         &:before {
                             background: $red;
                         }
-                        &.animated {
-                            .details {
-                                opacity: 1;
-                                transform: translateY(-50%) scale(1);
-                                //transition-delay: 0.8s;
-                            }
-                        }
+                        &.animated {}
                     }
                     &.jc {
                         background: url("../images/on/jc.png");
@@ -812,13 +797,7 @@ a:link {
                         &:before {
                             background: $blue;
                         }
-                        &.animated {
-                            .details {
-                                opacity: 1;
-                                transform: translateY(-50%) scale(1);
-                                //transition-delay: 0.3s;
-                            }
-                        }
+                        &.animated {}
                     }
                     &.ii {
                         background: url("../images/on/ii.png");
@@ -826,13 +805,7 @@ a:link {
                         &:before {
                             background: $green;
                         }
-                        &.animated {
-                            .details {
-                                opacity: 1;
-                                transform: translateY(-50%) scale(1);
-                                //transition-delay: 0.5s;
-                            }
-                        }
+                        &.animated {}
                     }
                     &.cw {
                         background: url("../images/on/cs.png");
@@ -840,13 +813,7 @@ a:link {
                         &:before {
                             background: $black;
                         }
-                        &.animated {
-                            .details {
-                                opacity: 1;
-                                transform: translateY(-50%) scale(1);
-                                //transition-delay: 0.6s;
-                            }
-                        }
+                        &.animated {}
                     }
                     /*OFFLINE EVENTS */
                     
@@ -1023,23 +990,23 @@ a:link {
                     }
                     &.cs {
                         background: url("../images/off/cs.png");
-                        @include before-overlay(red, blue);
+                        @include before-overlay(transparent, red);
                     }
                     &.tm {
                         background: url("../images/off/tm.png");
-                        @include before-overlay(blue, red);
+                        @include before-overlay(black, #860186);
                     }
                     &.t {
                         background: url("../images/off/t.png");
-                        @include before-overlay(red, blue);
+                        @include before-overlay(crimson, blue);
                     }
                     &.tc {
                         background: url("../images/off/t.png");
-                        @include before-overlay(blue, red);
+                        @include before-overlay(black, green);
                     }
                     &.poy {
                         background: url("../images/off/poy.png");
-                        @include before-overlay(red, blue);
+                        @include before-overlay(crimson, rgba(0, 88, 255, 0.5));
                     }
                 }
                 #mycanvas {

@@ -568,7 +568,10 @@ a:link {
             transform: translate(-50%, -50%);
             transition: 0.5s;
             font-weight: 300; }
-          /* line 717, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            /* line 715, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            #container #content #online-events .events .event .details h2:hover {
+              transform: translate(-50%, -50%) scale(0.8); }
+          /* line 719, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event .details p {
             position: absolute;
             top: 50%;
@@ -585,10 +588,10 @@ a:link {
             border-radius: 5px;
             font-size: 0.7em;
             line-height: 1.5em; }
-        /* line 749, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 747, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.open:before {
           opacity: 0.2; }
-        /* line 753, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 751, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event:hover {
           /*.details {
                             opacity: 0 !important;
@@ -596,13 +599,13 @@ a:link {
                         &:before {
                             opacity: 0.5;
                         }*/ }
-        /* line 780, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 778, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.nh {
           background: url("../images/on/nh.png");
           background-size: cover;
           background-position: center center;
           transition: background-position 0.5s ease; }
-          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 760, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.nh:before {
             content: "";
             width: 100%;
@@ -612,20 +615,16 @@ a:link {
             left: 0;
             background: rgba(0, 0, 0, 0.8);
             transition: opacity 0.5s ease; }
-          /* line 783, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 781, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.nh:before {
             background: rgba(209, 83, 255, 0.8); }
-          /* line 787, D:/Project Stuff/technoshinexv/scss/homepage.scss */
-          #container #content #online-events .events .event.nh.animated .details {
-            opacity: 1;
-            transform: translateY(-50%) scale(1); }
-        /* line 795, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 786, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.cz {
           background: url("../images/on/cz.png");
           background-size: cover;
           background-position: center center;
           transition: background-position 0.5s ease; }
-          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 760, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.cz:before {
             content: "";
             width: 100%;
@@ -635,20 +634,16 @@ a:link {
             left: 0;
             background: rgba(0, 0, 0, 0.8);
             transition: opacity 0.5s ease; }
-          /* line 798, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 789, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.cz:before {
             background: rgba(255, 83, 83, 0.8); }
-          /* line 802, D:/Project Stuff/technoshinexv/scss/homepage.scss */
-          #container #content #online-events .events .event.cz.animated .details {
-            opacity: 1;
-            transform: translateY(-50%) scale(1); }
-        /* line 809, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 794, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.jc {
           background: url("../images/on/jc.png");
           background-size: cover;
           background-position: center center;
           transition: background-position 0.5s ease; }
-          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 760, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.jc:before {
             content: "";
             width: 100%;
@@ -658,20 +653,16 @@ a:link {
             left: 0;
             background: rgba(0, 0, 0, 0.8);
             transition: opacity 0.5s ease; }
-          /* line 812, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 797, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.jc:before {
             background: rgba(83, 129, 255, 0.8); }
-          /* line 816, D:/Project Stuff/technoshinexv/scss/homepage.scss */
-          #container #content #online-events .events .event.jc.animated .details {
-            opacity: 1;
-            transform: translateY(-50%) scale(1); }
-        /* line 823, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 802, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.ii {
           background: url("../images/on/ii.png");
           background-size: cover;
           background-position: center center;
           transition: background-position 0.5s ease; }
-          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 760, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.ii:before {
             content: "";
             width: 100%;
@@ -681,20 +672,16 @@ a:link {
             left: 0;
             background: rgba(0, 0, 0, 0.8);
             transition: opacity 0.5s ease; }
-          /* line 826, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 805, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.ii:before {
             background: rgba(109, 255, 83, 0.8); }
-          /* line 830, D:/Project Stuff/technoshinexv/scss/homepage.scss */
-          #container #content #online-events .events .event.ii.animated .details {
-            opacity: 1;
-            transform: translateY(-50%) scale(1); }
-        /* line 837, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 810, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.cw {
           background: url("../images/on/cs.png");
           background-size: cover;
           background-position: center center;
           transition: background-position 0.5s ease; }
-          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 760, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.cw:before {
             content: "";
             width: 100%;
@@ -704,20 +691,16 @@ a:link {
             left: 0;
             background: rgba(0, 0, 0, 0.8);
             transition: opacity 0.5s ease; }
-          /* line 840, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 813, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.cw:before {
             background: rgba(0, 0, 0, 0.8); }
-          /* line 844, D:/Project Stuff/technoshinexv/scss/homepage.scss */
-          #container #content #online-events .events .event.cw.animated .details {
-            opacity: 1;
-            transform: translateY(-50%) scale(1); }
-        /* line 853, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 820, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.cs {
           background: url("../images/off/cs.png");
           background-size: cover;
           background-position: center center;
           transition: background-position 0.5s ease; }
-          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 760, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.cs:before {
             content: "";
             width: 100%;
@@ -727,16 +710,16 @@ a:link {
             left: 0;
             background: rgba(0, 0, 0, 0.8);
             transition: opacity 0.5s ease; }
-          /* line 856, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 823, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.cs:before {
             background: rgba(209, 83, 255, 0.8); }
-        /* line 860, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 827, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.poy {
           background: url("../images/off/poy.png");
           background-size: cover;
           background-position: center center;
           transition: background-position 0.5s ease; }
-          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 760, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.poy:before {
             content: "";
             width: 100%;
@@ -746,16 +729,16 @@ a:link {
             left: 0;
             background: rgba(0, 0, 0, 0.8);
             transition: opacity 0.5s ease; }
-          /* line 863, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 830, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.poy:before {
             background: rgba(83, 129, 255, 0.8); }
-        /* line 867, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 834, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.t {
           background: url("../images/off/t.png");
           background-size: cover;
           background-position: center center;
           transition: background-position 0.5s ease; }
-          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 760, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.t:before {
             content: "";
             width: 100%;
@@ -765,16 +748,16 @@ a:link {
             left: 0;
             background: rgba(0, 0, 0, 0.8);
             transition: opacity 0.5s ease; }
-          /* line 870, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 837, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.t:before {
             background: rgba(255, 83, 83, 0.8); }
-        /* line 874, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 841, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .events .event.tm {
           background: url("../images/off/tm.png");
           background-size: cover;
           background-position: center center;
           transition: background-position 0.5s ease; }
-          /* line 762, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 760, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.tm:before {
             content: "";
             width: 100%;
@@ -784,10 +767,10 @@ a:link {
             left: 0;
             background: rgba(0, 0, 0, 0.8);
             transition: opacity 0.5s ease; }
-          /* line 877, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 844, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #online-events .events .event.tm:before {
             background: rgba(109, 255, 83, 0.8); }
-    /* line 883, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    /* line 850, D:/Project Stuff/technoshinexv/scss/homepage.scss */
     #container #content #online-events .back-to-events {
       color: white;
       font-size: 2em;
@@ -803,17 +786,17 @@ a:link {
       height: 50px;
       border-radius: 50%;
       line-height: 50px; }
-      /* line 898, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 865, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #content #online-events .back-to-events.open {
         transform: translateX(-50%) scale(1); }
-        /* line 899, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 866, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #online-events .back-to-events.open:hover {
           transform: translateX(-50%) scale(1.1); }
-  /* line 906, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 873, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   #container #content #offline-events {
     position: relative;
     height: 650px; }
-    /* line 910, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    /* line 877, D:/Project Stuff/technoshinexv/scss/homepage.scss */
     #container #content #offline-events .events {
       height: 100%;
       z-index: 1;
@@ -825,13 +808,13 @@ a:link {
       display: table;
       width: 100%;
       -webkit-perspective: 2000px; }
-      /* line 916, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 883, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #content #offline-events .events .event {
         display: none; }
-        /* line 918, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 885, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event .details {
           font-size: 1em; }
-      /* line 927, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 894, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #content #offline-events .events ul {
         display: table-cell;
         vertical-align: middle;
@@ -842,10 +825,10 @@ a:link {
         -webkit-transform-style: preserve-3d;
         transform-origin: 50% 0%;
         transform: rotateY(45deg); }
-        /* line 937, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 904, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events ul li {
           margin: 20px 0px; }
-          /* line 939, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 906, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #offline-events .events ul li a {
             box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
             font-size: 1em;
@@ -856,12 +839,12 @@ a:link {
             color: rgba(0, 0, 0, 0.8);
             transition: color 0.3s ease;
             cursor: pointer; }
-            /* line 949, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            /* line 916, D:/Project Stuff/technoshinexv/scss/homepage.scss */
             #container #content #offline-events .events ul li a:after, #container #content #offline-events .events ul li a:before {
               color: white;
               position: absolute;
               top: 0; }
-            /* line 955, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            /* line 922, D:/Project Stuff/technoshinexv/scss/homepage.scss */
             #container #content #offline-events .events ul li a:after {
               /*content: "]";
                                 left: 100%;*/
@@ -875,7 +858,7 @@ a:link {
               opacity: 1;
               z-index: -2;
               transition: all 0.3s ease; }
-            /* line 970, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            /* line 937, D:/Project Stuff/technoshinexv/scss/homepage.scss */
             #container #content #offline-events .events ul li a:before {
               /*content: "[";
                                 left: 0%;*/
@@ -889,7 +872,7 @@ a:link {
               opacity: 1;
               transition: width 0.3s ease;
               z-index: -1; }
-            /* line 988, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            /* line 955, D:/Project Stuff/technoshinexv/scss/homepage.scss */
             #container #content #offline-events .events ul li a:hover, #container #content #offline-events .events ul li a.selected {
               /*color: #000;
                                 &:after {
@@ -900,14 +883,14 @@ a:link {
                                     opacity: 1;
                                     left: -7%;
                                 }*/ }
-              /* line 990, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+              /* line 957, D:/Project Stuff/technoshinexv/scss/homepage.scss */
               #container #content #offline-events .events ul li a:hover:after, #container #content #offline-events .events ul li a.selected:after {
                 width: 100%; }
-              /* line 994, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+              /* line 961, D:/Project Stuff/technoshinexv/scss/homepage.scss */
               #container #content #offline-events .events ul li a:hover:before, #container #content #offline-events .events ul li a.selected:before {
                 left: 0;
                 width: 50%; }
-      /* line 1011, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 978, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #content #offline-events .events .event-show {
         position: absolute;
         top: 0;
@@ -916,12 +899,12 @@ a:link {
         height: 100%;
         z-index: 0;
         transition: opacity 0.3s ease; }
-        /* line 1019, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 986, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show .info {
           position: absolute;
           top: 50%;
           left: 0; }
-        /* line 1024, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 991, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show.cs {
           background: url("../images/off/cs.png");
           /*&:before {
@@ -943,10 +926,10 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, red, blue);
+            background: linear-gradient(90deg, transparent, red);
             opacity: 0.8;
             z-index: 0; }
-        /* line 1028, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 995, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show.tm {
           background: url("../images/off/tm.png");
           /*&:before {
@@ -968,10 +951,10 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, blue, red);
+            background: linear-gradient(90deg, black, #860186);
             opacity: 0.8;
             z-index: 0; }
-        /* line 1032, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 999, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show.t {
           background: url("../images/off/t.png");
           /*&:before {
@@ -993,10 +976,10 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, red, blue);
+            background: linear-gradient(90deg, crimson, blue);
             opacity: 0.8;
             z-index: 0; }
-        /* line 1036, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1003, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show.tc {
           background: url("../images/off/t.png");
           /*&:before {
@@ -1018,10 +1001,10 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, blue, red);
+            background: linear-gradient(90deg, black, green);
             opacity: 0.8;
             z-index: 0; }
-        /* line 1040, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1007, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show.poy {
           background: url("../images/off/poy.png");
           /*&:before {
@@ -1043,22 +1026,22 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, red, blue);
+            background: linear-gradient(90deg, crimson, rgba(0, 88, 255, 0.5));
             opacity: 0.8;
             z-index: 0; }
-      /* line 1045, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 1012, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #content #offline-events .events #mycanvas {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%; }
-  /* line 1054, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1021, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   #container #content #tsx4-winners {
     position: relative;
     text-align: center;
     height: 100vh; }
-    /* line 1059, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    /* line 1026, D:/Project Stuff/technoshinexv/scss/homepage.scss */
     #container #content #tsx4-winners .collage {
       height: 100%;
       background: url("../images/collage_minsize.jpg");
@@ -1086,14 +1069,14 @@ a:link {
         background: linear-gradient(90deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 0, 0.8));
         opacity: 0.8;
         z-index: 0; }
-  /* line 1067, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1034, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   #container #content #team {
     position: relative;
     background: linear-gradient(45deg, orange, cyan);
     color: white;
     text-align: center;
     width: 100%; }
-    /* line 1076, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    /* line 1043, D:/Project Stuff/technoshinexv/scss/homepage.scss */
     #container #content #team ul {
       /*
                 position: absolute;
@@ -1105,11 +1088,11 @@ a:link {
       display: inline-block;
       list-style: none;
       text-align: center; }
-      /* line 1091, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 1058, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #content #team ul li {
         margin: 10px 0px;
         display: inline-block; }
-        /* line 1094, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1061, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #team ul li .member {
           padding: 0px 10px;
           width: 240px;
@@ -1119,7 +1102,7 @@ a:link {
           line-height: 75px;
           text-align: left;
           position: relative; }
-          /* line 1105, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1072, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #team ul li .member .dp {
             /*
                             position: absolute;
@@ -1134,14 +1117,14 @@ a:link {
             margin-right: 10px;
             overflow: hidden;
             position: relative; }
-            /* line 1125, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            /* line 1092, D:/Project Stuff/technoshinexv/scss/homepage.scss */
             #container #content #team ul li .member .dp img {
               max-width: 100%;
               position: absolute;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%); }
-          /* line 1134, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1101, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #team ul li .member .member-name {
             font-size: 0.9em;
             /*position: absolute;
@@ -1150,7 +1133,7 @@ a:link {
                             transform: translateY(-50%);*/
             position: relative;
             padding-left: 10px; }
-            /* line 1143, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            /* line 1110, D:/Project Stuff/technoshinexv/scss/homepage.scss */
             #container #content #team ul li .member .member-name:before {
               content: "";
               position: absolute;
@@ -1160,19 +1143,19 @@ a:link {
               width: 1px;
               height: 30px;
               background: rgba(0, 0, 0, 0.5); }
-  /* line 1159, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1126, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   #container #footer {
     background: limegreen;
     color: white;
     text-align: center;
     padding: 10px 0; }
-    /* line 1166, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    /* line 1133, D:/Project Stuff/technoshinexv/scss/homepage.scss */
     #container #footer .base {
       display: inline-block; }
-      /* line 1168, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 1135, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #footer .base .share {
         display: inline-block; }
-        /* line 1170, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1137, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #footer .base .share div {
           display: inline-block;
           margin: 0px 10px;
@@ -1181,34 +1164,34 @@ a:link {
           height: 50px;
           line-height: 50px;
           transition: background 0.25s ease; }
-          /* line 1179, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1146, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #footer .base .share div:hover.facebook {
             background: #0050ff; }
-          /* line 1182, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1149, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #footer .base .share div:hover.youtube {
             background: #ff2b1e; }
-      /* line 1189, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 1156, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #footer .base .developed {
         display: inline-block; }
-        /* line 1191, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1158, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #footer .base .developed a {
           color: #0031ff;
           text-decoration: none;
           padding: 5px;
           transition: all 0.1s linear; }
-          /* line 1196, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1163, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #footer .base .developed a:hover {
             background: #0031ff;
             color: white; }
 
 @-webkit-keyframes blow-out {
-  /* line 1209, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1176, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   from {
     transform: scale(1);
     box-shadow: 0px 0px 10px white;
     opacity: 1; }
 
-  /* line 1214, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1181, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   to {
     transform: scale(3.5);
     box-shadow: 0px 0px 10px white;
@@ -1224,26 +1207,26 @@ a:link {
     100% {
         transform: scale(1) translate(-50%, 0%);
     }*/
-  /* line 1232, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1199, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   0% {
     opacity: 0;
     transform: translate(-50%, 0%); }
 
-  /* line 1236, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1203, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   50% {
     opacity: 0.7; }
 
-  /* line 1239, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1206, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   100% {
     opacity: 0;
     transform: translate(-50%, 50%); } }
 
 @-webkit-keyframes rotate-electron {
-  /* line 1246, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1213, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   from {
     transform: rotate(0deg); }
 
-  /* line 1249, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1216, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   to {
     transform: rotate(360deg); } }
 

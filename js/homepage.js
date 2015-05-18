@@ -139,7 +139,7 @@ $(function () {
                     top: "0px",
                     left: "0px"
                 }, {
-                    duration: 750,
+                    duration: 500,
                     easeing: "ease-in-out",
                     complete: function () {
                         selectedEvent.addClass("open");
@@ -220,7 +220,7 @@ $(function () {
                         top: selectedEvent.prop('top'),
                         left: selectedEvent.prop('left')
                     }, {
-                        duration: 750,
+                        duration: 500,
                         easeing: "ease-in-out",
                         complete: function () {
                             selectedEvent.css({
@@ -369,39 +369,6 @@ function initOfflineEventsCanvas() {
         backdivs.css("opacity", 0);
         backdiv.css("opacity", 1);
 
-
-        /*animating backdivs
-        if (lastindex < i) {
-            isDivSliding = true;
-            // move current to the left and bring next from right
-            backdivs.eq(lastindex).velocity({
-                left: ["-100%","0%"]
-            }, slidingDuration,"swing");
-            backdivs.eq(i).velocity({
-                left: ["0%","100%"]
-            }, {
-                easing: "swing",
-                duration: slidingDuration,
-                complete: function () {
-                    isDivSliding = false;
-                }
-            });
-        } else if (i < lastindex) {
-            isDivSliding = true;
-            //move current to right and bring previous from left
-            backdivs.eq(lastindex).velocity({
-                left: ["100%","0%"]
-            }, slidingDuration);
-            backdivs.eq(i).velocity({
-                left: ["0%","-100%"]
-            }, {
-                duration: slidingDuration,
-                complete: function () {
-                    isDivSliding = false;
-                }
-            });
-        }*/
-
         eventindex = backdiv.attr('class').split(/\s+/)[1];
         //clear previous quotes
         if (clearquotes)
@@ -440,8 +407,8 @@ function initOfflineEventsCanvas() {
         //setInterval(drawtxt, 50);
     }
 
-    var fadespeed = 0.02,
-        txtsizespeed = 0.6,
+    var fadespeed = 0.028,
+        txtsizespeed = 0.8,
         timeSinceLastWord = 0,
         newTextInterval = 150,
         allshowntexts = new Array();
