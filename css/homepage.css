@@ -803,7 +803,7 @@ a:link {
       position: relative;
       height: 100%;
       display: block;
-      background: rgba(209, 83, 255, 0.8);
+      background: white;
       text-align: left;
       display: table;
       width: 100%;
@@ -926,10 +926,10 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, transparent, red);
+            background: linear-gradient(90deg, black, black);
             opacity: 0.8;
             z-index: 0; }
-        /* line 995, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 996, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show.tm {
           background: url("../images/off/tm.png");
           /*&:before {
@@ -951,10 +951,10 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, black, #860186);
+            background: linear-gradient(90deg, black, black);
             opacity: 0.8;
             z-index: 0; }
-        /* line 999, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1001, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show.t {
           background: url("../images/off/t.png");
           /*&:before {
@@ -976,10 +976,10 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, crimson, blue);
+            background: linear-gradient(90deg, black, black);
             opacity: 0.8;
             z-index: 0; }
-        /* line 1003, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1006, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show.tc {
           background: url("../images/off/t.png");
           /*&:before {
@@ -1001,10 +1001,10 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, black, green);
+            background: linear-gradient(90deg, black, black);
             opacity: 0.8;
             z-index: 0; }
-        /* line 1007, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1011, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #offline-events .events .event-show.poy {
           background: url("../images/off/poy.png");
           /*&:before {
@@ -1026,22 +1026,22 @@ a:link {
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, crimson, rgba(0, 88, 255, 0.5));
+            background: linear-gradient(90deg, black, black);
             opacity: 0.8;
             z-index: 0; }
-      /* line 1012, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 1017, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #content #offline-events .events #mycanvas {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%; }
-  /* line 1021, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1026, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   #container #content #tsx4-winners {
     position: relative;
     text-align: center;
     height: 100vh; }
-    /* line 1026, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    /* line 1031, D:/Project Stuff/technoshinexv/scss/homepage.scss */
     #container #content #tsx4-winners .collage {
       height: 100%;
       background: url("../images/collage_minsize.jpg");
@@ -1069,14 +1069,14 @@ a:link {
         background: linear-gradient(90deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 0, 0.8));
         opacity: 0.8;
         z-index: 0; }
-  /* line 1034, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1039, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   #container #content #team {
     position: relative;
     background: linear-gradient(45deg, orange, cyan);
     color: white;
     text-align: center;
     width: 100%; }
-    /* line 1043, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    /* line 1048, D:/Project Stuff/technoshinexv/scss/homepage.scss */
     #container #content #team ul {
       /*
                 position: absolute;
@@ -1088,11 +1088,11 @@ a:link {
       display: inline-block;
       list-style: none;
       text-align: center; }
-      /* line 1058, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 1063, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #content #team ul li {
         margin: 10px 0px;
         display: inline-block; }
-        /* line 1061, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1066, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #content #team ul li .member {
           padding: 0px 10px;
           width: 240px;
@@ -1102,7 +1102,7 @@ a:link {
           line-height: 75px;
           text-align: left;
           position: relative; }
-          /* line 1072, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1077, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #team ul li .member .dp {
             /*
                             position: absolute;
@@ -1117,14 +1117,14 @@ a:link {
             margin-right: 10px;
             overflow: hidden;
             position: relative; }
-            /* line 1092, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            /* line 1097, D:/Project Stuff/technoshinexv/scss/homepage.scss */
             #container #content #team ul li .member .dp img {
               max-width: 100%;
               position: absolute;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%); }
-          /* line 1101, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1106, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #content #team ul li .member .member-name {
             font-size: 0.9em;
             /*position: absolute;
@@ -1133,7 +1133,7 @@ a:link {
                             transform: translateY(-50%);*/
             position: relative;
             padding-left: 10px; }
-            /* line 1110, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+            /* line 1115, D:/Project Stuff/technoshinexv/scss/homepage.scss */
             #container #content #team ul li .member .member-name:before {
               content: "";
               position: absolute;
@@ -1143,19 +1143,19 @@ a:link {
               width: 1px;
               height: 30px;
               background: rgba(0, 0, 0, 0.5); }
-  /* line 1126, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1131, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   #container #footer {
     background: limegreen;
     color: white;
     text-align: center;
     padding: 10px 0; }
-    /* line 1133, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+    /* line 1138, D:/Project Stuff/technoshinexv/scss/homepage.scss */
     #container #footer .base {
       display: inline-block; }
-      /* line 1135, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 1140, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #footer .base .share {
         display: inline-block; }
-        /* line 1137, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1142, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #footer .base .share div {
           display: inline-block;
           margin: 0px 10px;
@@ -1164,34 +1164,34 @@ a:link {
           height: 50px;
           line-height: 50px;
           transition: background 0.25s ease; }
-          /* line 1146, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1151, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #footer .base .share div:hover.facebook {
             background: #0050ff; }
-          /* line 1149, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1154, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #footer .base .share div:hover.youtube {
             background: #ff2b1e; }
-      /* line 1156, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+      /* line 1161, D:/Project Stuff/technoshinexv/scss/homepage.scss */
       #container #footer .base .developed {
         display: inline-block; }
-        /* line 1158, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+        /* line 1163, D:/Project Stuff/technoshinexv/scss/homepage.scss */
         #container #footer .base .developed a {
           color: #0031ff;
           text-decoration: none;
           padding: 5px;
           transition: all 0.1s linear; }
-          /* line 1163, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+          /* line 1168, D:/Project Stuff/technoshinexv/scss/homepage.scss */
           #container #footer .base .developed a:hover {
             background: #0031ff;
             color: white; }
 
 @-webkit-keyframes blow-out {
-  /* line 1176, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1181, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   from {
     transform: scale(1);
     box-shadow: 0px 0px 10px white;
     opacity: 1; }
 
-  /* line 1181, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1186, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   to {
     transform: scale(3.5);
     box-shadow: 0px 0px 10px white;
@@ -1207,26 +1207,26 @@ a:link {
     100% {
         transform: scale(1) translate(-50%, 0%);
     }*/
-  /* line 1199, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1204, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   0% {
     opacity: 0;
     transform: translate(-50%, 0%); }
 
-  /* line 1203, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1208, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   50% {
     opacity: 0.7; }
 
-  /* line 1206, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1211, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   100% {
     opacity: 0;
     transform: translate(-50%, 50%); } }
 
 @-webkit-keyframes rotate-electron {
-  /* line 1213, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1218, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   from {
     transform: rotate(0deg); }
 
-  /* line 1216, D:/Project Stuff/technoshinexv/scss/homepage.scss */
+  /* line 1221, D:/Project Stuff/technoshinexv/scss/homepage.scss */
   to {
     transform: rotate(360deg); } }
 

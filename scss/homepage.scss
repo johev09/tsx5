@@ -886,7 +886,7 @@ a:link {
                         font-size: 1em;
                     }
                 }
-                background: $violet;
+                background: white;
                 text-align: left;
                 display: table;
                 width: 100%;
@@ -990,23 +990,28 @@ a:link {
                     }
                     &.cs {
                         background: url("../images/off/cs.png");
-                        @include before-overlay(transparent, red);
+                        //@include before-overlay(transparent, red);
+                        @include before-overlay(black, black);
                     }
                     &.tm {
                         background: url("../images/off/tm.png");
-                        @include before-overlay(black, #860186);
+                        //@include before-overlay(black, #860186);
+                        @include before-overlay(black, black);
                     }
                     &.t {
                         background: url("../images/off/t.png");
-                        @include before-overlay(crimson, blue);
+                        //@include before-overlay(crimson, blue);
+                        @include before-overlay(black, black);
                     }
                     &.tc {
                         background: url("../images/off/t.png");
-                        @include before-overlay(black, green);
+                        //@include before-overlay(black, green);
+                        @include before-overlay(black, black);
                     }
                     &.poy {
                         background: url("../images/off/poy.png");
-                        @include before-overlay(crimson, rgba(0, 88, 255, 0.5));
+                        //@include before-overlay(crimson, rgba(0, 88, 255, 0.5));
+                        @include before-overlay(black, black);
                     }
                 }
                 #mycanvas {
