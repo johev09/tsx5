@@ -15,6 +15,9 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
+a:visited {
+    color: inherit;
+}
 a:link {
     color: inherit;
 }
@@ -1061,7 +1064,7 @@ a:link {
                 text-align: center;
                 //width: 80%;
                 li {
-                    margin: 10px 0px;
+                    margin: 0px 0px;
                     display: inline-block;
                     .member {
                         //width: 25%;
@@ -1070,7 +1073,7 @@ a:link {
                         //height: 75px;
                         float: left;
                         background: rgba(0, 0, 0, 0.1);
-                        margin: 0px 5px;
+                        margin: 0px 2px;
                         line-height: 75px;
                         text-align: left;
                         position: relative;
@@ -1114,6 +1117,7 @@ a:link {
                             padding-left: 10px;
                             &:before {
                                 content: "";
+                                display: none;
                                 position: absolute;
                                 top: 50%;
                                 transform: translateY(-50%);

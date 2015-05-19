@@ -205,15 +205,15 @@ $(function () {
             selectedEvent.find(".details p").velocity({
                 translateX: "-50%",
                 translateY: "-50%",
-                scaleX: [0, 1],
-                scaleY: [0, 1],
+                scaleX: 0,
+                scaleY: 0,
                 opacity: 0
             }, {
                 duration: 500,
                 //easeing: "ease",
                 display: "none",
                 complete: function () {
-                    selectedEvent.velocity({
+                    selectedEvent.delay(500).velocity({
                         width: selectedEvent.prop('w') + 10 + "px",
                         height: selectedEvent.prop('h') + 10 + "px",
                         //borderWidth: '5px',
