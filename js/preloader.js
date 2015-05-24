@@ -1,5 +1,5 @@
 $.ajax({
-    url: "/index.html",
+    url: "../",
     xhrFields: {
         onprogress: function (e) {
             if (e.lengthComputable) {
