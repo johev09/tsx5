@@ -10,7 +10,15 @@ $.ajax({
         }
     },
     success: function (response) {
-        var $loadbg = $("#load-bg");
+        removeLoader();
+    },
+    error: function() {
+        removeLoader();
+    }
+});
+
+function removeLoader() {
+    var $loadbg = $("#load-bg");
         $loadbg.velocity({
             //scaleX: 2,
             //scaleY: 2,
@@ -23,5 +31,4 @@ $.ajax({
                 $loadbg.remove();
             }
         });
-    }
-});
+}
