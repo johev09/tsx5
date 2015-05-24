@@ -68,23 +68,6 @@ var eventindex = 'cs',
 
 var canvas, ctx;
 
-$(window).load(function () {
-    var $loadbg = $("#load-bg");
-
-    /*$loadbg.velocity({
-        scaleX: 2,
-        scaleY: 2,
-        opacity: 0
-    }, {
-        duration: 1000,
-        //display: "none",
-        easeing: "ease-in-out",
-        complete: function () {
-            $loadbg.remove();
-        }
-    });*/
-});
-
 $(function () {
 
     function initOnlineEvents() {

@@ -1,5 +1,5 @@
 $.ajax({
-    url: "/tsx5/",
+    url: "/",
     xhrFields: {
         onprogress: function (e) {
             if (e.lengthComputable) {
@@ -13,7 +13,7 @@ $.ajax({
         removeLoader();
     },
     error: function() {
-        removeLoader();
+        //removeLoader();
     }
 });
 
