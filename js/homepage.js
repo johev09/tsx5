@@ -68,8 +68,7 @@ var eventindex = 'cs',
 
 var canvas, ctx;
 
-$(function () {
-
+$(window).load(function () {
     var $loadbg = $("#load-bg");
 
     $loadbg.velocity({
@@ -84,6 +83,9 @@ $(function () {
             $loadbg.remove();
         }
     });
+});
+
+$(function () {
 
     function initOnlineEvents() {
         //$("*").off(); //clear all events of all elements, so no problem in resize
