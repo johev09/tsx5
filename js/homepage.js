@@ -70,6 +70,21 @@ var canvas, ctx;
 
 $(function () {
 
+    var $loadbg = $("#load-bg");
+
+    $loadbg.velocity({
+        scaleX: 3,
+        scaleY: 3,
+        opacity: 0
+    }, {
+        duration: 1000,
+        //display: "none",
+        easeing: "ease-in-out",
+        complete: function () {
+            $loadbg.remove();
+        }
+    });
+
     function initOnlineEvents() {
         //$("*").off(); //clear all events of all elements, so no problem in resize
         // ONLINE EVENTS
@@ -103,7 +118,7 @@ $(function () {
             "top": "0px",
             "left": "0px"
         });
-        onlinevents.find(".details h2").attr("title","Click to Open");
+        onlinevents.find(".details h2").attr("title", "Click to Open");
         onlinevents.each(function (i, el) {
             var colspan = $(this).data("col-span"),
                 rowspan = $(this).data("row-span");

@@ -18,15 +18,19 @@ html {
 a:visited {
     color: inherit;
 }
+
 a:link {
     color: inherit;
 }
+
+$c1: rgb(100, 172, 255);
+$c2: rgba(0, 255, 78, 1);
 
 #container {
     height: 100%;
     position: relative;
     .menu {
-        z-index: 999;
+        z-index: 100;
         position: fixed;
         top: 0;
         left: 0;
@@ -204,7 +208,7 @@ a:link {
     $button-size: 40px;
     $transition: .3s; // increase this to see the transformations in slow-motion
     $a-pad: 5px;
-    #nav {
+    /*#nav {
         //width: 460px;
         -webkit-perspective: 2000px;
         //display: inline-block;
@@ -221,10 +225,6 @@ a:link {
             transform: rotateY(-90deg) rotateZ(-10deg);
             transition: 0.7s ease;
             opacity: 0;
-            /*&:hover {
-                transform: rotateY(0deg) rotateZ(0deg);
-                opacity: 1;
-            }*/
             
             font-size: 0.8em;
             font-weight: 600;
@@ -255,9 +255,10 @@ a:link {
             a:nth-child(2) {}
             a:nth-child(3) {}
         }
-    }
+    }*/
+    
     .lines-button {
-        z-index: 999;
+        z-index: 100;
         outline: none;
         position: fixed;
         top: 30px;
@@ -329,38 +330,13 @@ a:link {
         }
     }
     #header {
+        position: relative;
         height: 100%;
         text-align: center;
         overflow: hidden;
-        position: relative;
         background: -webkit-gradient(linear, left top, right top, from(rgba(97, 255, 76, 0.75)), to(rgba(0, 0, 255, 0.75)));
         //box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-        z-index: 1;
         -webkit-backface-visibility: hidden;
-        /*.lines-button:hover {
-  opacity: 1;
-     
-  .lines {
-    &:before { top: $button-size/3.5; }
-    &:after { top: -$button-size/3.5; }
-  }
-}*/
-        /*.lines-button.arrow:hover {
-            transform: scale3d(.8, .8, .8);
-        }
-        .lines-button.arrow:hover .lines {
-            &:before, &:after {
-                top: 0;
-                width: $button-size/1.8;
-            }
-            &:before {
-                transform: rotate3d(0, 0, 1, 40deg);
-            }
-            &:after {
-                transform: rotate3d(0, 0, 1, -40deg);
-            }
-        }*/
-        
         .nit-logo {
             position: absolute;
             top: 1.5em;
@@ -384,12 +360,12 @@ a:link {
             }
         }
         h1 {
+            position: absolute;
             width: 2000px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             display: inline-block;
-            position: absolute;
             font-family: 'Raleway', Raleway Dots, sans-serif;
             font-size: 5em;
             letter-spacing: 0.2em;
@@ -407,16 +383,8 @@ a:link {
                 color: white;
                 /*-webkit-text-fill-color: white;*/
             }
-            &:hover {
-                /*letter-spacing: 0.3em;
-                color: rgba(160, 255, 90, 0.1);*/
-            }
-            @mixin o-size($size) {
-                width: $size;
-                height: $size;
-                border-radius: 50%;
-            }
-            .atom {
+            /*.atom {
+                z-index: 100;
                 display: inline-block;
                 position: relative;
                 .orbit {
@@ -463,22 +431,28 @@ a:link {
                             transform: rotateX(-60deg) rotateY(-45deg);
                         }
                     }
-                }
-                .o {
-                    position: relative;
+                }  
+            }*/
+            
+            @mixin o-size($size) {
+                width: $size;
+                height: $size;
+                border-radius: 50%;
+            }
+            .o {
+                position: relative;
+                @include o-size(60px);
+                display: inline-block;
+                margin-right: 0.2em;
+                box-shadow: inset 0px 0px 20px 5px rgba(255, 255, 255, 0.5);
+                //background: -webkit-radial-gradient(rgba(255, 255, 255, 0.5) 0%, transparent 60%);
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     @include o-size(60px);
-                    display: inline-block;
-                    margin-right: 0.2em;
-                    box-shadow: inset 0px 0px 20px 5px rgba(255, 255, 255, 0.5);
-                    //background: -webkit-radial-gradient(rgba(255, 255, 255, 0.5) 0%, transparent 60%);
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        @include o-size(60px);
-                        -webkit-animation: blow-out 2s linear infinite;
-                    }
+                    -webkit-animation: blow-out 2s linear infinite;
                 }
             }
         }
@@ -503,6 +477,54 @@ a:link {
                 margin-top: 10px;
                 width: 50px
             }
+        }
+    }
+    #load-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        z-index: 999;
+        @mixin lm {
+            //position: relative;
+            //margin: 75px auto;
+            width: 300px;
+            height: 300px;
+            display: block;
+            overflow: hidden;
+        }
+        @mixin lmd {
+            border-radius: 50%;
+            padding: 8px;
+            border: 3px solid transparent;
+            -webkit-animation: rotate linear 3.5s infinite;
+        }
+        @mixin ld {
+            height: 100%;
+        }
+        //display: none;
+        .loader4 {
+            @include lm;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .loader4 div {
+            @include ld;
+        }
+        .loader4 div {
+            @include lmd;
+            border-radius: 50%;
+            padding: 10px;
+            //border-top-color: $c1;
+            //border-bottom-color: $c2;
+            -webkit-animation: rotate2 5s infinite linear;
+        }
+        div:hover {
+            animation-play-state: paused;
         }
     }
     #content {
@@ -1224,5 +1246,32 @@ a:link {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+        border-top-color: $c1;
+    }
+    50% {
+        transform: rotate(180deg);
+        border-top-color: $c2;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-top-color: $c1;
     }
 }
