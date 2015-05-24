@@ -71,7 +71,7 @@ var canvas, ctx;
 $(window).load(function () {
     var $loadbg = $("#load-bg");
 
-    $loadbg.velocity({
+    /*$loadbg.velocity({
         scaleX: 2,
         scaleY: 2,
         opacity: 0
@@ -82,7 +82,7 @@ $(window).load(function () {
         complete: function () {
             $loadbg.remove();
         }
-    });
+    });*/
 });
 
 $(function () {

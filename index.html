@@ -23,6 +23,7 @@
     <script src="js/jquery.smooth-scroll.js"></script>
     <script src="js/classie.js"></script>
 
+    <script src="js/preloader.js"></script>
     <script src="js/winlist.js"></script>
     <script src="js/viewport.js"></script>
     <script src="js/homepage.js"></script>
@@ -37,10 +38,30 @@
 </head>
 
 <body class="noselect">
-    <!--<video autoplay loop poster="images/bg.png" id="bgvid">
-        <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
-<source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
-    </video>-->
+    <div id="load-bg">
+           <span class="load-percent"></span>
+            <div class='loader4'>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div id="container">
 
         <nav id="menu" class="menu">
@@ -75,14 +96,6 @@
                 </svg>
             </div>
         </nav>
-        <!--<div id="nav">
-            <nav class="page-nav">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Online Events</a>
-                <a href="#">Offline Events</a>
-            </nav>
-        </div>-->
         <button class="lines-button" type="button" role="button" aria-label="Toggle Navigation">
             <span class="lines"></span>
         </button>
@@ -127,29 +140,7 @@
             </div>
 
         </div>
-        <div id="load-bg">
-            <div class='loader4'>
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                                <div>
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <div>
-                                                    <div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div id="content">
             <h1 class="section-heading about ros" data-anim="letter-sapcing">
             <i class="fa fa-gear"></i><span class="left">ABOUT</span><span class="right">US</span>
@@ -537,7 +528,6 @@
             </div>
         </div>
     </div>
-    <audio id="neon" src="neonglow2.mp3" type="audio/mp3"></audio>
 </body>
 
 </html>
