@@ -72,8 +72,8 @@ $(window).load(function () {
     var $loadbg = $("#load-bg");
 
     $loadbg.velocity({
-        scaleX: 3,
-        scaleY: 3,
+        scaleX: 2,
+        scaleY: 2,
         opacity: 0
     }, {
         duration: 1000,
