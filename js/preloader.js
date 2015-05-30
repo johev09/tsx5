@@ -1,3 +1,4 @@
+var isLoaderRemoved=false;
 $.ajax({
     url: "/",
     xhrFields: {
@@ -10,7 +11,7 @@ $.ajax({
         }
     },
     success: function (response) {
-        removeLoader();
+        //removeLoader();
     },
     error: function() {
         //removeLoader();
@@ -18,6 +19,9 @@ $.ajax({
 });
 
 function removeLoader() {
+    if(isLoaderRemoved)
+        return;
+    isLoaderRemoved=true;
     var $loadbg = $("#load-bg");
         $loadbg.velocity({
             //scaleX: 2,
@@ -33,4 +37,6 @@ function removeLoader() {
         });
 }
 
-$(window).load(removeLoader);
+//$(window).load(removeLoader);
+
+setTimeout(removeLoader,30*1000);
