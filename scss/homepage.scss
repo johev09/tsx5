@@ -30,10 +30,10 @@ $c2: rgba(0,
 255,
 78,
 1);
-
 body {
     position: relative;
 }
+
 #load-bg {
     position: fixed;
     top: 0;
@@ -196,10 +196,10 @@ body {
                             color: inherit;
                         }
                         i {
-                            //display: none;
+                            display: none;
+                            //display: block;
                             font-size: 1.5em;
                             color: #5590ff;
-                            display: block;
                         }
                         span {
                             display: inline-block;
@@ -507,7 +507,9 @@ body {
             //line-height: 100px;
             overflow: hidden;
             z-index: 2;
-            box-shadow: 0 0 100px rgba(0, 0, 0, 0.7);
+            padding: 10px 0px;
+            //box-shadow: 0 0 100px rgba(0, 0, 0, 0.7);
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 1);
             position: relative;
             font-size: 3em;
             font-weight: 400;
@@ -519,31 +521,50 @@ body {
             //background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
             */
             
-            background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(255, 255, 255, 0.2) 75%), linear-gradient(45deg, rgba(0, 0, 0, 0) 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(255, 255, 255, 0.2) 75%), rgb(0, 153, 151);
-            background-position: auto auto;
-            background-size: 100px 100px;
+            //background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(255, 255, 255, 0.2) 75%), linear-gradient(45deg, rgba(0, 0, 0, 0) 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(255, 255, 255, 0.2) 75%), rgb(79, 79, 255);
+            //background-position: auto auto;
+            //background-size: 150px 150px;
+            background-color: #03A9F4;
+            color: #d8d8d8;
             span.left, span.right {
                 display: inline-block;
                 padding: 10px 10px;
-                //transition: all 1s ease;
-                //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    color: #ffbd44;
+                    opacity: 0;
+                    
+                    transition-delay: 0.2s;
+                    font-size: 150%;
+                    text-shadow: 1px 1px 2px black;
+                }
             }
             span.left {
-                color: white;
+                //color: white;
+                //color: #2a2a2a;
                 position: relative;
                 //left: -20%;
                 opacity: 1;
                 //text-shadow: 2px 0px 2px rgb(0, 0, 0);
+                &:before {
+                    left: -100px;
+                    content: "{";
+                    transition: opacity 0.3s, left 0.3s;
+                }
             }
             span.right {
-                color: #2a2a2a;
-                //color: #ffffff;
-                //color: white;
-                //border-radius: 10px 0 0 10px;
-                //background: white;
-                //text-shadow: 2px 0px 2px rgb(255, 255, 255);
+                //color: #2a2a2a;
+                position: relative;
+                &:before {
+                    right: -100px;
+                    content: "}";
+                    transition: opacity 0.3s, right 0.3s;
+                }
             }
             i {
+                display: none;
                 text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
                 //text-shadow: -5px 0px 5px rgb(0, 0, 0);
                 transform: translateX(100%);
@@ -555,46 +576,53 @@ body {
                     color: #bcbcbc;
                 }
             }
-            &.offline {
-                i {
-                    //color: dodgerblue;
-                    color: #ffffff;
-                }
-            }
             &.online {
+                background-color: #00cc76;
+                
                 i {
                     color: violet;
                 }
             }
+            &.offline {
+                background-color: #9f75ff;
+                i {
+                    //color: dodgerblue;
+                    color: #ffffff;
+                }
+            }            
             &.winners {
                 i {
                     color: yellow;
                 }
             }
             &.team {
+                background-color: #9263fd;
                 i {
                     color: #ac87ff;
                 }
             }
             &.animated {
-                i {
+                /*i {
                     transform: translateX(0%);
                     opacity: 1;
+                }*/
+                
+                span.left {
+                    &:before {
+                        left: -20px;
+                        opacity: 1;
+                    }
+                }
+                span.right {
+                    &:before {
+                        right: -20px;
+                        opacity: 1;
+                    }
                 }
             }
         }
         @mixin before-overlay($from,
         $to) {
-            /*&:before {
-                content: "";
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background: $back;
-            }*/
-            
             &:after {
                 content: "";
                 width: 100%;
@@ -620,7 +648,7 @@ body {
                 top: 0;
                 left: 0;
                 background: linear-gradient(0deg, #00ffce, #3dff3d);
-                opacity: 0.9;
+                opacity: 0.8;
             }
             text-align: center;
             //background: rgb(109, 255, 109);
@@ -674,18 +702,18 @@ body {
             $h: 500px;
             margin-bottom: 0px;
             .events {
-                overflow: hidden;
+                //overflow: hidden;
                 position: relative;
                 display: inline-block;
                 .event {
                     //z-index: 1 !important;
-                    box-sizing: border-box;
-                    border: 5px solid white;
+                    //border: 5px solid white;
                     //padding: 5px;
                     width: $w;
                     height: $h;
                     float: left;
                     position: relative;
+                    margin-bottom: -5px;
                     //overflow: hidden;
                     //box-shadow: inset 0 0 50px 5px black;
                     cursor: pointer;
@@ -738,9 +766,9 @@ body {
                         }
                     }
                     &.animated {
-                        h2 {
+                        /*h2 {
                             -webkit-animation: online-h2-anim 1s;
-                        }
+                        }*/
                     }
                     @mixin anim-back {
                         &:before {
@@ -755,11 +783,6 @@ body {
                         }
                         background-size: cover;
                         background-position: center center;
-                        transition: background-position 0.5s ease;
-                        &:hover {
-                            //transition: background-position 5s linear;
-                            //background-position: 0% 0%;
-                        }
                     }
                     &.nh {
                         background: url("../images/on/nh.png");
@@ -1025,78 +1048,60 @@ body {
             //height: 500px;
             position: relative;
             background: linear-gradient(45deg, orange, cyan);
+            //background: #00c46c;
             color: white;
             //padding: 50px 0px;
             text-align: center;
             //overflow: auto;
             width: 100%;
             ul {
-                //border: 1px solid black;
-                /*
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                */
-                
                 margin: 50px 0px;
                 display: inline-block;
                 //background: black;
                 list-style: none;
-                text-align: center;
+                width: 100%;
                 //width: 80%;
                 li {
-                    margin: 0px 0px;
                     display: inline-block;
+                    text-align: center;
                     .member {
+                        display: inline-block;
                         //width: 25%;
-                        padding: 0px 10px;
-                        width: 240px;
+                        //padding: 0px 10px;
+                        padding: 20px;
+                        //width: 240px;
                         //height: 75px;
                         float: left;
-                        background: rgba(0, 0, 0, 0.1);
-                        margin: 0px 2px;
-                        line-height: 75px;
-                        text-align: left;
-                        position: relative;
+                        //background: rgba(0, 0, 0, 0.1);
+                        //margin: 0px 2px;
+                        //line-height: 75px;
+                        text-align: center;
                         .dp {
-                            /*
-                            position: absolute;
-                            top: 50%;
-                            left: 5px;
-                            transform: translateY(-50%);
-                            */
-                            
-                            width: 50px;
-                            height: 50px;
+                            position: relative;
+                            width: 100px;
+                            height: 100px;
                             //box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
                             display: inline-block;
-                            //background: red;
-                            vertical-align: middle;
-                            margin-right: 10px;
-                            overflow: hidden;
-                            //background: url("../images/team/sumit.jpg");
-                            //background-size: cover;
-                            //background-position: center center;
-                            position: relative;
+                            overflow: hidden !important;
+                            //border: 1px solid black;
+                            border-radius: 10px;
+                            -webkit-border-radius: 10px;
                             img {
                                 //max-height: 100%;
-                                max-width: 100%;
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
+                                width: 100%;
                             }
                         }
-                        .member-name {
-                            font-size: 0.9em;
-                            /*position: absolute;
+                        .details {
+                            margin-top: 10px;
+                            color: darkslategray;
+                            .member-name {
+                                color: white;
+                                font-size: 0.9em;
+                                /*position: absolute;
                             top: 50%;
                             right: 10px;
                             transform: translateY(-50%);*/
-                            
-                            position: relative;
-                            padding-left: 10px;
+                                /*padding-left: 10px;
                             &:before {
                                 content: "";
                                 display: none;
@@ -1107,6 +1112,13 @@ body {
                                 width: 1px;
                                 height: 30px;
                                 background: rgba(0, 0, 0, 0.5);
+                            }*/
+                            }
+                            .designation {
+                                display: block;
+                                margin-top: 5px;
+                                font-style: italic;
+                                font-size: 90%;
                             }
                         }
                     }
@@ -1139,6 +1151,9 @@ body {
                         }
                         &.youtube {
                             background: #ff2b1e;
+                        }
+                        &.twitter {
+                            background: #07c2ff;
                         }
                     }
                 }

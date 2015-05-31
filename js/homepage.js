@@ -111,6 +111,7 @@ $(function () {
             var borderWidth = parseInt($(this).css("borderLeftWidth"), 10) + parseInt($(this).css("borderRightWidth"), 10);
             var w = width * colspan - borderWidth,
                 h = width * rowspan - borderWidth;
+            console.log(w);
             $(this).width(w);
             $(this).height(h);
             $(this).prop('w', w);
@@ -214,8 +215,10 @@ $(function () {
                 display: "none",
                 complete: function () {
                     selectedEvent.delay(500).velocity({
-                        width: selectedEvent.prop('w') + 10 + "px",
-                        height: selectedEvent.prop('h') + 10 + "px",
+                        //width: selectedEvent.prop('w') + 10 + "px",
+                        //height: selectedEvent.prop('h') + 10 + "px",
+                        width: selectedEvent.prop('w') + "px",
+                        height: selectedEvent.prop('h') + "px",
                         //borderWidth: '5px',
                         top: selectedEvent.prop('top'),
                         left: selectedEvent.prop('left')

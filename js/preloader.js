@@ -11,7 +11,7 @@ $.ajax({
         }
     },
     success: function (response) {
-        //removeLoader();
+        removeLoader();
     },
     error: function() {
         //removeLoader();
@@ -24,8 +24,8 @@ function removeLoader() {
     isLoaderRemoved=true;
     var $loadbg = $("#load-bg");
         $loadbg.velocity({
-            //scaleX: 2,
-            //scaleY: 2,
+            scaleX: 2,
+            scaleY: 2,
             opacity: 0
         }, {
             duration: 1000,
