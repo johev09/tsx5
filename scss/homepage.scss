@@ -525,7 +525,7 @@ body {
             //background-position: auto auto;
             //background-size: 150px 150px;
             background-color: #03A9F4;
-            color: #d8d8d8;
+            color: #e8e8e8;
             span.left, span.right {
                 display: inline-block;
                 padding: 10px 10px;
@@ -572,12 +572,13 @@ body {
                 transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s;
             }
             &.about {
+                background-color: #04f590;
                 i {
                     color: #bcbcbc;
                 }
             }
             &.online {
-                background-color: #00cc76;
+                
                 
                 i {
                     color: violet;
