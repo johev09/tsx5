@@ -37,6 +37,6 @@ function removeLoader() {
         });
 }
 
-//$(window).load(removeLoader);
+$(window).load(removeLoader);
 
 setTimeout(removeLoader,30*1000);
