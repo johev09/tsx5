@@ -1,0 +1,214 @@
+<div class="member">
+                            <div class="dp">
+                                <img src="images/team/sumit.jpg">
+                            </div>
+                            <span class="member-name">Sumit Agrawal - <strong>President</strong></span>
+                        </div>
+						<div class="member">
+                            <div class="dp">
+                                <img src="images/team/abhishek.jpg">
+                            </div>
+                            <span class="member-name">Abhishek Tripathi - <strong>Vice President</strong></span>
+                        </div>
+					</li>
+					<li>
+						<div class="member">
+                            <div class="dp">
+                                <img src="images/team/rahul.jpg">
+                            </div>
+                            <span class="member-name">Rahul Gupta - <strong>Vice President</strong></span>
+					 </div>
+					 <div class="member">
+                            <div class="dp">
+                                <img src="images/team/prithviraj.jpg">
+                            </div>
+                            <span class="member-name">Prithviraj Pramanik - <strong>General Secretary</strong></span>
+					 </div>
+					</li>
+					<li>
+					 <div class="member">
+                            <div class="dp">
+                                <img src="images/team/soumya.jpg">
+                            </div>
+                            <span class="member-name">Soumya Singh - <strong>Fest Cordinator</strong></span>
+                      </div>
+					    
+					    <div class="member">
+                            <div class="dp">
+                                <img src="images/team/aditi.jpg">
+                            </div>
+                            <span class="member-name">Aditi Phadnis - <strong>Sponsorship Head</strong></span>
+                        </div>
+				    </li>
+					<li>
+					<div class="member">
+                            <div class="dp">
+                                <img src="images/team/mukund.jpg">
+                            </div>
+                            <span class="member-name">Mukund Jha - <strong>Sponsorship Head</strong></span>
+                    </div>
+					<div class="member">
+                            <div class="dp">
+                                <img src="images/team/shrikant.jpg">
+                            </div>
+                            <span class="member-name">Shrikant Kumar - <strong>Software Cell Head</strong></span>
+					 </div>
+					</li>
+					<li>
+					<div class="member">
+                            <div class="dp">
+                                <img src="images/team/swati.jpg">
+                            </div>
+                            <span class="member-name">Swati Singh - <strong>Treasurer</strong></span>
+                        </div>
+					 <div class="member">
+                            <div class="dp">
+                                <img src="images/team/abhijeet.jpg">
+                            </div>
+                            <span class="member-name">Abhijeet Gupta - <strong>Treasurer</strong></span>
+					  </div>
+					</li>
+					<li>
+					  <div class="member">
+                            <div class="dp">
+                                <img src="images/team/vikash.jpg">
+                            </div>
+                            <span class="member-name">Vikash Kumar - </strong>Techtalk</strong></span>
+					 </div>
+					 <div class="member">
+                            <div class="dp">
+                                <img src="images/team/puja.jpg">
+                            </div>
+                            <span class="member-name">Puja Bharti - <strong>Resource Manager</strong></span>
+					 </div>
+					</li>
+					<li>
+					<div class="member">
+                            <div class="dp">
+                                <img src="images/team/anand.jpg">
+                            </div>
+                            <span class="member-name">Anand Chowdhury - <strong>Open Source Activity Head</strong></span>
+                        </div>
+					<div class="member">
+                            <div class="dp">
+                                <img src="images/team/rajnish.jpg">
+                            </div>
+                            <span class="member-name">Rajnish Jha - <strong>Group Cordinator</strong></span>
+                        </div>
+					</li>
+					<li>
+					<div class="member">
+                            <div class="dp">
+                                <img src="images/team/vidyu.jpg">
+                            </div>
+                            <span class="member-name">Vidyu Rani - <strong>Group Cordinator</strong></span>
+					</div>
+				     <div class="member">
+                            <div class="dp">
+                                <img src="images/team/shivam.jpg">
+                            </div>
+                            <span class="member-name">Shivam Sharma - <strong>Online Activity Head</strong></span>
+					 </div>
+					</li>
+					<li>
+					 <div class="member">
+                            <div class="dp">
+                                <img src="images/team/amandeep.jpg">
+                            </div>
+                            <span class="member-name">Amandeep Singh - <strong>Creative Head</strong></span>
+					 </div>
+				     <div class="member">
+			                <div class="dp">
+                                <img src="images/team/anisha.jpg">
+                            </div>
+                            <span class="member-name">Anisha Tulika - <strong>Designing Head</strong></span>
+					 </div>
+					</li>
+				    <li>
+				     <div class="member">
+                            <div class="dp">
+                                <img src="images/team/shristi.jpg">
+                            </div>
+                            <span class="member-name">Shristi Parmanandka</span>
+					 </div>
+					 <div class="member">
+                            <div class="dp">
+                                <img src="images/team/johev.jpg">
+                            </div>
+                            <span class="member-name">Sk Johev</span>
+					 </div>
+					
+				    </li>
+				    <li>
+				     <div class="member">
+                            <div class="dp">
+                                <img src="images/team/souradeep.jpg">
+                            </div>
+                            <span class="member-name">Souradeep Saha</span>
+					 </div>
+				     <div class="member">
+                            <div class="dp">
+                                <img src="images/team/snehasish.jpg">
+                            </div>
+                            <span class="member-name">Snehasish Dasgupta</span>
+					 </div>
+					</li>
+					<li>
+					 <div class="member">
+                            <div class="dp">
+                                <img src="images/team/manisha.jpg">
+                            </div>
+                            <span class="member-name">Manisha</span>
+					 </div>
+					 <div class="member">
+                            <div class="dp">
+                                <img src="images/team/shubham.jpg">
+                            </div>
+                            <span class="member-name">Shubham Majavdiya</span>
+					 </div>
+				    </li>
+				    <li>
+				     <div class="member">
+                            <div class="dp">
+                                <img src="images/team/tiwari.jpg">
+                            </div>
+                            <span class="member-name">Sourabh Tiwari</span>
+					 </div>
+				     <div class="member">
+                            <div class="dp">
+                                <img src="images/team/mishra.jpg">
+                            </div>
+                            <span class="member-name">Sourabh Mishra</span>
+				     </div>
+					</li>
+					<li>
+				     <div class="member">
+                            <div class="dp">
+                                <img src="images/team/tejshree.jpg">
+                            </div>
+                            <span class="member-name">Tejshree Bakore</span>
+				     </div>
+				     <div class="member">
+                            <div class="dp">
+                                <img src="images/team/abhisheka.jpg">
+                            </div>
+                            <span class="member-name">Abhishek Aggarwal</span>
+				     </div>
+				    </li>
+				    <li>
+				     <div class="member">
+                            <div class="dp">
+                                <img src="images/team/ankit.jpg">
+                            </div>
+                            <span class="member-name">Ankit Singh</span>
+				     </div>
+					 <div class="member">
+                            <div class="dp">
+                                <img src="images/team/Nisha.jpg">
+                            </div>
+                            <span class="member-name">Nisha Kumari</span>
+				     </div>
+				    </li>
+				</ul>
+            </section>
+        </div>

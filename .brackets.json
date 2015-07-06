@@ -9,7 +9,7 @@
                 "sourceComments": "map",
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false,
+            "linting.collapsed": true,
             "styleActiveLine": true,
             "code-folding.folds": {
                 "D:/Project Stuff/technoshinexv/scss/homepage.scss": {

@@ -147,7 +147,7 @@ body {
                     //margin: 20px;
                     //display: block;
                     width: 100%;
-                    height: 16.67%;
+                    height: 14.28%;
                     color: white;
                     transition: 0.7s;
                     transform: scale(1) translateX(-50%);
@@ -177,9 +177,6 @@ body {
                         }
                         a {
                             border-right: 5px solid orange;
-                            //box-shadow: inset 10px 0 30px -10px white;
-                            //box-shadow:inset 0px 0 20px 0px rgba(255, 255, 255, 0.7);
-                            //transform: translateX(50%);
                         }
                     }
                     a {
@@ -263,6 +260,9 @@ body {
                         }
                         &:nth-child(6) {
                             transition-delay: 1.15s;
+                        }
+                        &:nth-child(7) {
+                            transition-delay: 1.3s;
                         }
                     }
                 }
@@ -354,25 +354,31 @@ body {
         -webkit-backface-visibility: hidden;
         .nit-logo {
             position: absolute;
-            top: 1.5em;
-            left: 1.5em;
-            width: 100px;
-            height: 100px;
+            top: 15px;
+            left: 15px;
+            width: 80px;
+            height: 80px;
             img {
                 max-width: 100%;
             }
-            opacity:0.7;
+            opacity:0.8;
         }
         .cad-logo {
-            display: none;
+            //display: none;
+            //padding: 10px;
+            //background: black;
             position: absolute;
-            bottom: 1.5em;
-            right: 1.5em;
-            width: 100px;
-            height: 100px;
+            bottom: 15px;
+            right: 15px;
+            
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
             img {
                 max-width: 100%;
+                vertical-align: middle;
             }
+            opacity:0.7;
         }
         h1 {
             position: absolute;
@@ -502,13 +508,11 @@ body {
         $black: rgba(0, 0, 0, 0.8);
         //height: 100%;
         h1.section-heading {
+            width: 100%;
             text-align: center;
-            //height: 100px;
-            //line-height: 100px;
             overflow: hidden;
             z-index: 2;
             padding: 10px 0px;
-            //box-shadow: 0 0 100px rgba(0, 0, 0, 0.7);
             box-shadow: inset 0 0 50px rgba(0, 0, 0, 1);
             position: relative;
             font-size: 3em;
@@ -516,11 +520,6 @@ body {
             display: block;
             letter-spacing: 0.2em;
             white-space: nowrap;
-            /*background-size: 50px 50px;
-            background-color: rgb(40, 118, 244);
-            //background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
-            */
-            
             //background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(255, 255, 255, 0.2) 75%), linear-gradient(45deg, rgba(0, 0, 0, 0) 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(255, 255, 255, 0.2) 75%), rgb(79, 79, 255);
             //background-position: auto auto;
             //background-size: 150px 150px;
@@ -535,19 +534,14 @@ body {
                     transform: translate(0, -50%);
                     color: #ffbd44;
                     opacity: 0;
-                    
                     transition-delay: 0.2s;
                     font-size: 150%;
                     text-shadow: 1px 1px 2px black;
                 }
             }
             span.left {
-                //color: white;
-                //color: #2a2a2a;
                 position: relative;
-                //left: -20%;
                 opacity: 1;
-                //text-shadow: 2px 0px 2px rgb(0, 0, 0);
                 &:before {
                     left: -100px;
                     content: "{";
@@ -555,7 +549,6 @@ body {
                 }
             }
             span.right {
-                //color: #2a2a2a;
                 position: relative;
                 &:before {
                     right: -100px;
@@ -564,50 +557,29 @@ body {
                 }
             }
             i {
-                display: none;
-                text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+                //text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
                 //text-shadow: -5px 0px 5px rgb(0, 0, 0);
-                transform: translateX(100%);
-                opacity: 0;
-                transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s;
+                color: rgba(0, 0, 0, 0.5);
             }
             &.about {
                 background-color: #04f590;
-                i {
-                    color: #bcbcbc;
-                }
             }
-            &.online {
-                
-                
-                i {
-                    color: violet;
-                }
-            }
+            &.online {}
             &.offline {
                 background-color: #9f75ff;
-                i {
-                    //color: dodgerblue;
-                    color: #ffffff;
-                }
-            }            
+            }
             &.winners {
-                i {
+                /*i {
                     color: yellow;
-                }
+                }*/
+            }
+            &.sponsorship {
+                background-color: #04f590;
             }
             &.team {
                 background-color: #9263fd;
-                i {
-                    color: #ac87ff;
-                }
             }
             &.animated {
-                /*i {
-                    transform: translateX(0%);
-                    opacity: 1;
-                }*/
-                
                 span.left {
                     &:before {
                         left: -20px;
@@ -786,14 +758,14 @@ body {
                         background-position: center center;
                     }
                     &.nh {
-                        background: url("../images/on/nh.png");
+                        background: url("../images/on/nh.jpg");
                         @include anim-back;
                         &:before {
                             background: $violet;
                         }
                     }
                     &.cz {
-                        background: url("../images/on/cz.png");
+                        background: url("../images/on/cz.jpg");
                         @include anim-back;
                         &:before {
                             background: $red;
@@ -801,7 +773,7 @@ body {
                         &.animated {}
                     }
                     &.jc {
-                        background: url("../images/on/jc.png");
+                        background: url("../images/on/jc.jpg");
                         @include anim-back;
                         &:before {
                             background: $blue;
@@ -809,7 +781,7 @@ body {
                         &.animated {}
                     }
                     &.ii {
-                        background: url("../images/on/ii.png");
+                        background: url("../images/on/ii.jpg");
                         @include anim-back;
                         &:before {
                             background: $green;
@@ -817,14 +789,15 @@ body {
                         &.animated {}
                     }
                     &.cw {
-                        background: url("../images/on/cs.png");
+                        background: url("../images/on/cw.jpg");
                         @include anim-back;
+                        //background-position: 50% 0%;
                         &:before {
                             background: $black;
                         }
                         &.animated {}
                     }
-                    /*OFFLINE EVENTS */
+                    /*OFFLINE EVENTS 
                     
                     &.cs {
                         background: url("../images/off/cs.png");
@@ -853,7 +826,7 @@ body {
                         &:before {
                             background: $green;
                         }
-                    }
+                    }*/
                 }
             }
             .back-to-events {
@@ -926,12 +899,8 @@ body {
                                 color: white;
                                 position: absolute;
                                 top: 0;
-                                //transition: left 0.3s ease, opacity 0.3s ease;
                             }
                             &:after {
-                                /*content: "]";
-                                left: 100%;*/
-                                
                                 content: "";
                                 height: 100%;
                                 width: 100%;
@@ -944,17 +913,12 @@ body {
                                 transition: all 0.3s ease;
                             }
                             &:before {
-                                /*content: "[";
-                                left: 0%;*/
-                                
                                 position: absolute;
                                 width: 0px;
                                 height: 100%;
-                                //left: -10px;
                                 left: 0;
                                 top: 0;
                                 content: "";
-                                //background: rgba(255, 255, 255, 1);
                                 background: greenyellow;
                                 opacity: 1;
                                 transition: width 0.3s ease;
@@ -962,24 +926,13 @@ body {
                             }
                             &:hover,
                             &.selected {
-                                //color: white;
                                 &:after {
                                     width: 100%;
-                                    //background: black;
                                 }
                                 &:before {
                                     left: 0;
                                     width: 50%;
                                 }
-                                /*color: #000;
-                                &:after {
-                                    opacity: 1;
-                                    left: 105%;
-                                }
-                                &:before {
-                                    opacity: 1;
-                                    left: -7%;
-                                }*/
                             }
                         }
                     }
@@ -1022,6 +975,16 @@ body {
                         //@include before-overlay(crimson, rgba(0, 88, 255, 0.5));
                         @include before-overlay(black, black);
                     }
+                    &.gg {
+                        background: url("../images/off/gg.jpg");
+                        //@include before-overlay(crimson, rgba(0, 88, 255, 0.5));
+                        @include before-overlay(black, black);
+                    }
+                    &.bm {
+                        background: url("../images/off/bm.jpg");
+                        //@include before-overlay(crimson, rgba(0, 88, 255, 0.5));
+                        @include before-overlay(black, black);
+                    }
                 }
                 #mycanvas {
                     position: absolute;
@@ -1045,81 +1008,90 @@ body {
                 @include before-overlay(rgba(0, 0, 255, 0.8), rgba(255, 255, 0, 0.8));
             }
         }
-        #team {
-            //height: 500px;
-            position: relative;
-            background: linear-gradient(45deg, orange, cyan);
-            //background: #00c46c;
-            color: white;
-            //padding: 50px 0px;
+        #sponsors {
+            padding: 100px;
+            overflow: hidden;
             text-align: center;
-            //overflow: auto;
-            width: 100%;
-            ul {
-                margin: 50px 0px;
+            >div {
                 display: inline-block;
-                //background: black;
-                list-style: none;
-                width: 100%;
-                //width: 80%;
-                li {
+                .sponsor {
+                    width: 200px;
+                    height: 150px;
+                    background: black;
+                    float: left;
+                    margin: 0px 20px;
+                    &#cmc {
+                        background: url("../images/sponsors/cmc.jpg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+                    &#codechef {
+                        background: url("../images/sponsors/code.jpg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+                    &#hackerrank {
+                        background: url("../images/sponsors/hackerrank.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+                    &#pinnacle {
+                        background: url("../images/sponsors/pinnacle.jpg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+                }
+            }
+        }
+        #team {
+            position: relative;
+            //background: linear-gradient(45deg, orange, cyan);
+            background: url("../images/zwartevilt.png");
+            color: white;
+            text-align: center;
+            width: 100%;
+            overflow: hidden;
+            .team-content {
+                text-align: center;
+                margin: 50px 0px;
+                .member {
                     display: inline-block;
+                    padding: 10px;
                     text-align: center;
-                    .member {
+                    width: 190px;
+                    .dp {
+                        position: relative;
+                        width: 60px;
+                        height: 60px;
                         display: inline-block;
-                        //width: 25%;
-                        //padding: 0px 10px;
-                        padding: 20px;
-                        //width: 240px;
-                        //height: 75px;
-                        float: left;
-                        //background: rgba(0, 0, 0, 0.1);
-                        //margin: 0px 2px;
-                        //line-height: 75px;
-                        text-align: center;
-                        .dp {
-                            position: relative;
-                            width: 100px;
-                            height: 100px;
-                            //box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-                            display: inline-block;
-                            overflow: hidden !important;
-                            //border: 1px solid black;
-                            border-radius: 10px;
-                            -webkit-border-radius: 10px;
-                            img {
-                                //max-height: 100%;
-                                width: 100%;
-                            }
+                        overflow: hidden !important;
+                        border-radius: 2px;
+                        img {
+                            width: 100%;
                         }
-                        .details {
-                            margin-top: 10px;
-                            color: darkslategray;
-                            .member-name {
-                                color: white;
-                                font-size: 0.9em;
-                                /*position: absolute;
-                            top: 50%;
-                            right: 10px;
-                            transform: translateY(-50%);*/
-                                /*padding-left: 10px;
+                    }
+                    .details {
+                        margin-top: 10px;
+                        color: darkslategray;
+                        .member-name {
+                            color: white;
+                            font-size: 75%;
+                        }
+                        .designation {
+                            color: #9f9e9e;
+                            display: block;
+                            margin-top: 5px;
+                            font-style: italic;
+                            font-size: 80%;
                             &:before {
-                                content: "";
-                                display: none;
-                                position: absolute;
-                                top: 50%;
-                                transform: translateY(-50%);
-                                left: 0%;
-                                width: 1px;
-                                height: 30px;
-                                background: rgba(0, 0, 0, 0.5);
-                            }*/
+                                content: "(";
                             }
-                            .designation {
-                                display: block;
-                                margin-top: 5px;
-                                font-style: italic;
-                                font-size: 90%;
+                            &:after {
+                                content: ")";
                             }
                         }
                     }
